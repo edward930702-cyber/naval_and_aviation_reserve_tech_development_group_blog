@@ -1,5 +1,40 @@
 ---
 import '../styles/global.css';
+
+let viewsCount = 0;
+let posts = [];
+let recentPosts = [];
+let tags = [];
+
+try {
+  // 注意：這裡直接使用 Docker 內部服務名稱 http://backend:3000
+  const viewsRes = await fetch('http://backend:3000/api/views', { method: 'POST' });
+  if (viewsRes.ok) {
+    const viewsData = await viewsRes.json();
+    viewsCount = viewsData.views ?? 0;
+  }
+
+  const postsRes = await fetch('http://backend:3000/api/posts');
+  if (postsRes.ok) {
+    const rawPosts = await postsRes.json();
+    posts = Array.isArray(rawPosts) ? rawPosts.map(p => ({
+      slug: p.slug || '',
+      title: p.data?.title || p.slug || '無標題',
+      category: p.data?.category || 'Reserve (DevOps)',
+      description: p.data?.description || '',
+      pubDate: p.data?.pubDate ? new Date(p.data.pubDate) : new Date(),
+      tags: Array.isArray(p.data?.tags) ? p.data.tags : []
+    })).sort((a, b) => b.pubDate - a.pubDate) : [];
+
+    recentPosts = posts.slice(0, 3);
+
+    const tagSet = new Set();
+    posts.forEach(p => p.tags.forEach(t => tagSet.add(t)));
+    tags = Array.from(tagSet);
+  }
+} catch (err) {
+  console.error('SSR 抓取資料失敗:', err);
+}
 ---
 
 <html lang="zh-TW">
@@ -22,18 +57,16 @@ import '../styles/global.css';
         <span class="px-4 py-2 bg-slate-900/90 text-emerald-400 border border-slate-800 rounded-md">
           STATUS: <span class="text-emerald-400 font-semibold">ONLINE</span>
         </span>
-        <span id="views-counter" class="px-4 py-2 bg-slate-900/90 text-slate-300 border border-slate-800 rounded-md">
-          VIEWS: <span class="text-emerald-400 font-semibold">0</span>
+        <span class="px-4 py-2 bg-slate-900/90 text-slate-300 border border-slate-800 rounded-md">
+          VIEWS: <span class="text-emerald-400 font-semibold">{viewsCount}</span>
         </span>
       </div>
     </header>
 
-    <!-- Subtitle Banner -->
     <div class="bg-slate-900/40 border-l-4 border-emerald-400 p-5 text-sm md:text-base text-slate-200 rounded-r-md">
-      「一整個莫名其妙的研究資料儲存中心」
+      「陸海空全棧技術演練場 — Code, Architecture, and Tactical Engineering.」
     </div>
 
-    <!-- Main Content Grid -->
     <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pt-2">
       
       <!-- Left: Tag Matrix -->
@@ -42,8 +75,16 @@ import '../styles/global.css';
           <h2 class="text-sm text-emerald-400 tracking-wider font-semibold">
             // 標籤矩陣 <span class="text-slate-500 font-normal">(TAGS)</span>
           </h2>
-          <div id="tags-container" class="flex flex-wrap md:flex-col gap-3">
-            <span class="text-xs text-slate-600">載入中...</span>
+          <div class="flex flex-wrap md:flex-col gap-3">
+            {tags.length > 0 ? (
+              tags.map(t => (
+                <a href={`/tags/${encodeURIComponent(t)}`} class="px-3.5 py-2 text-xs bg-slate-900/50 border border-slate-800 text-slate-300 rounded-md hover:border-emerald-500/50 hover:text-emerald-400 transition">
+                  # {t}
+                </a>
+              ))
+            ) : (
+              <span class="text-xs text-slate-600">無標籤</span>
+            )}
           </div>
         </div>
       </aside>
@@ -52,120 +93,41 @@ import '../styles/global.css';
       <main class="md:col-span-3 space-y-6">
         <div class="flex justify-between items-center text-sm">
           <h2 class="text-emerald-400 tracking-wider font-semibold">
-            // 最新文章 <span class="text-slate-500 font-normal">(TACTICAL LOGS - TOP 3)</span>
+            // 最新戰術日誌 <span class="text-slate-500 font-normal">(TACTICAL LOGS - TOP 3)</span>
           </h2>
-          <span id="posts-count" class="text-slate-500">已載入 0 篇最新文章</span>
+          <span class="text-slate-500">已載入 {recentPosts.length} 篇最新文章</span>
         </div>
 
-        <div id="posts-container" class="space-y-6">
-          <div class="p-12 text-center text-sm text-slate-600 border border-dashed border-slate-800/80 rounded-xl">
-            文章載入中...
-          </div>
+        <div class="space-y-6">
+          {recentPosts.length > 0 ? (
+            recentPosts.map(post => (
+              <article class="p-6 bg-slate-900/30 border border-slate-800/80 rounded-xl hover:border-slate-700 transition space-y-3">
+                <div class="flex justify-between items-start">
+                  <span class="text-xs px-3 py-1 bg-emerald-950/60 text-emerald-400 border border-emerald-800/40 rounded-md font-medium">
+                    {post.category}
+                  </span>
+                  <time class="text-xs text-slate-500">
+                    {post.pubDate.toISOString().split('T')[0]}
+                  </time>
+                </div>
+                <h3 class="text-lg md:text-xl font-bold text-slate-100 hover:text-emerald-400 transition">
+                  <a href={`/posts/${post.slug}`}>{post.title}</a>
+                </h3>
+                <p class="text-sm text-slate-400 line-clamp-2 leading-relaxed">
+                  {post.description || '點擊進入檢視詳細戰術評估與程式碼實作。'}
+                </p>
+                <div class="flex gap-3 pt-2">
+                  {post.tags.map(t => <span class="text-xs text-slate-500">#{t}</span>)}
+                </div>
+              </article>
+            ))
+          ) : (
+            <div class="p-12 text-center text-sm text-slate-600 border border-dashed border-slate-800/80 rounded-xl">目前無文章資料</div>
+          )}
         </div>
       </main>
 
     </div>
   </div>
-
-  <script>
-    async function loadData() {
-      // 1. 統計並更新觀看次數 (VIEWS)
-      try {
-        let viewsRes = await fetch('http://localhost:3000/api/views', { method: 'POST' });
-        if (!viewsRes.ok) {
-          viewsRes = await fetch('http://localhost:3000/api/views');
-        }
-
-        if (viewsRes.ok) {
-          const viewsData = await viewsRes.json();
-          const viewsCount = viewsData.views !== undefined ? viewsData.views : (typeof viewsData === 'number' ? viewsData : 0);
-          
-          const viewsEl = document.getElementById('views-counter');
-          if (viewsEl) {
-            viewsEl.innerHTML = `VIEWS: <span class="text-emerald-400 font-semibold">${viewsCount}</span>`;
-          }
-        }
-      } catch (vErr) {
-        console.error('觀看數 API 呼叫失敗:', vErr);
-      }
-
-      // 2. 載入文章與標籤列表
-      try {
-        const res = await fetch('http://localhost:3000/api/posts');
-        if (!res.ok) throw new Error('API 回應異常');
-
-        const rawPosts = await res.json();
-        
-        const posts = Array.isArray(rawPosts) ? rawPosts.map(p => ({
-          slug: p.slug || '',
-          title: p.data?.title || p.slug || '無標題',
-          category: p.data?.category || 'Reserve (DevOps)',
-          description: p.data?.description || '',
-          pubDate: p.data?.pubDate ? new Date(p.data.pubDate) : new Date(),
-          tags: Array.isArray(p.data?.tags) ? p.data.tags : []
-        })).sort((a, b) => b.pubDate - a.pubDate) : [];
-
-        const recentPosts = posts.slice(0, 3);
-        const postsContainer = document.getElementById('posts-container');
-        const postsCount = document.getElementById('posts-count');
-
-        if (postsCount) postsCount.innerText = `已載入 ${recentPosts.length} 篇最新文章`;
-
-        if (postsContainer) {
-          if (recentPosts.length > 0) {
-            postsContainer.innerHTML = recentPosts.map(post => `
-              <article class="p-6 bg-slate-900/30 border border-slate-800/80 rounded-xl hover:border-slate-700 transition space-y-3">
-                <div class="flex justify-between items-start">
-                  <span class="text-xs px-3 py-1 bg-emerald-950/60 text-emerald-400 border border-emerald-800/40 rounded-md font-medium">
-                    ${post.category}
-                  </span>
-                  <time class="text-xs text-slate-500">
-                    ${post.pubDate.toISOString().split('T')[0]}
-                  </time>
-                </div>
-                <h3 class="text-lg md:text-xl font-bold text-slate-100 hover:text-emerald-400 transition">
-                  <a href="/posts/${post.slug}">${post.title}</a>
-                </h3>
-                <p class="text-sm text-slate-400 line-clamp-2 leading-relaxed">
-                  ${post.description || '點擊進入檢視詳細戰術評估與程式碼實作。'}
-                </p>
-                <div class="flex gap-3 pt-2">
-                  ${post.tags.map(t => `<span class="text-xs text-slate-500">#${t}</span>`).join(' ')}
-                </div>
-              </article>
-            `).join('');
-          } else {
-            postsContainer.innerHTML = `<div class="p-12 text-center text-sm text-slate-600 border border-dashed border-slate-800/80 rounded-xl">目前無文章資料</div>`;
-          }
-        }
-
-        // 渲染標籤
-        const tagSet = new Set();
-        posts.forEach(p => p.tags.forEach(t => tagSet.add(t)));
-        const tagsContainer = document.getElementById('tags-container');
-
-        if (tagsContainer) {
-          if (tagSet.size > 0) {
-            tagsContainer.innerHTML = Array.from(tagSet).map(t => `
-              <a href="/tags/${encodeURIComponent(t)}" class="px-3.5 py-2 text-xs bg-slate-900/50 border border-slate-800 text-slate-300 rounded-md hover:border-emerald-500/50 hover:text-emerald-400 transition">
-                # ${t}
-              </a>
-            `).join('');
-          } else {
-            tagsContainer.innerHTML = `<span class="text-xs text-slate-600">無標籤</span>`;
-          }
-        }
-
-      } catch (err) {
-        console.error('載入資料失敗:', err);
-        const postsContainer = document.getElementById('posts-container');
-        if (postsContainer) {
-          postsContainer.innerHTML = `<div class="p-12 text-center text-sm text-rose-500/80 border border-dashed border-rose-950/50 rounded-xl">無法載入戰術日誌，請確認 API 連線</div>`;
-        }
-      }
-    }
-
-    loadData();
-  </script>
 </body>
 </html>

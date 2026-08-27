@@ -1,112 +1,79 @@
 ---
+import { marked } from 'marked';
 import '../../styles/global.css';
 
 const { slug } = Astro.params;
+
+let post = null;
+let htmlContent = '';
+
+try {
+  const res = await fetch('http://backend:3000/api/posts');
+  if (res.ok) {
+    const posts = await res.json();
+    const currentPost = posts.find(p => p.slug === slug);
+    
+    if (currentPost) {
+      post = {
+        title: currentPost.data?.title || currentPost.slug,
+        category: currentPost.data?.category || 'Reserve (DevOps)',
+        pubDate: currentPost.data?.pubDate ? new Date(currentPost.data.pubDate) : new Date(),
+        content: currentPost.content || ''
+      };
+      htmlContent = await marked.parse(post.content);
+    }
+  }
+} catch (err) {
+  console.error('抓取文章內文失敗:', err);
+}
 ---
 
 <html lang="zh-TW" class="dark">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>文章 // NARTDG</title>
-    <!-- 引入 CDN 版 marked 庫 -->
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" is:inline></script>
+    <title>{post ? post.title : '404 - 文章不存在'} // NARTDG</title>
   </head>
   <body class="bg-[#030712] text-slate-200 font-mono min-h-screen p-6 md:p-12">
     <div class="max-w-4xl mx-auto space-y-8">
       
-      <!-- 動態返回按鈕 -->
       <a id="back-btn" href="/" class="inline-flex items-center gap-2 text-xs md:text-sm text-emerald-400 hover:text-emerald-300 transition">
         &larr; <span id="back-text">返回首頁 (RETURN TO BASE)</span>
       </a>
 
-      <!-- Header -->
-      <header class="border-b border-slate-800/80 pb-6 space-y-4">
-        <div class="flex items-center gap-3">
-          <span id="post-category" class="text-xs px-3 py-1 bg-emerald-950/60 text-emerald-400 border border-emerald-800/40 rounded-md font-medium">
-            LOADING...
-          </span>
-          <time id="post-date" class="text-xs text-slate-500"></time>
-        </div>
-        <h1 id="post-title" class="text-2xl md:text-4xl font-bold text-white tracking-wide">
-          載入中...
-        </h1>
-      </header>
+      {post ? (
+        <>
+          <header class="border-b border-slate-800/80 pb-6 space-y-4">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-3 py-1 bg-emerald-950/60 text-emerald-400 border border-emerald-800/40 rounded-md font-medium">
+                {post.category}
+              </span>
+              <time class="text-xs text-slate-500">
+                {post.pubDate.toISOString().split('T')[0]}
+              </time>
+            </div>
+            <h1 class="text-2xl md:text-4xl font-bold text-white tracking-wide">
+              {post.title}
+            </h1>
+          </header>
 
-      <!-- Content Area -->
-      <main id="post-content" class="prose prose-invert prose-emerald max-w-none text-slate-300 space-y-4 leading-relaxed">
-        <div class="p-12 text-center text-sm text-slate-600 border border-dashed border-slate-800/80 rounded-xl">
-          正在從後端伺服器載入內文...
+          <main class="prose prose-invert prose-emerald max-w-none text-slate-300 space-y-4 leading-relaxed" set:html={htmlContent} />
+        </>
+      ) : (
+        <div class="p-8 text-center text-rose-500/80 border border-dashed border-rose-950/50 rounded-xl">
+          找不到指定戰術日誌文件 ({slug}.md)
         </div>
-      </main>
+      )}
 
     </div>
 
-    <script define:vars={{ slug }}>
-      // 判斷來源 URL，動態切換返回目標
-      function setupBackButton() {
-        const backBtn = document.getElementById('back-btn');
-        const backText = document.getElementById('back-text');
-        const referrer = document.referrer;
-
-        if (referrer && referrer.includes('/tags/')) {
-          backBtn.href = referrer;
-          backText.innerText = '返回主題檢索 (RETURN TO SUBJECT RETRIVAL)';
-        } else {
-          backBtn.href = '/';
-          backText.innerText = '返回首頁 (RETURN TO BASE)';
-        }
+    <script>
+      const backBtn = document.getElementById('back-btn');
+      const backText = document.getElementById('back-text');
+      if (document.referrer && document.referrer.includes('/tags/')) {
+        backBtn.href = document.referrer;
+        backText.innerText = '返回標籤矩陣 (RETURN TO TAG MATRIX)';
       }
-
-      async function fetchPost() {
-        setupBackButton();
-
-        try {
-          const res = await fetch('http://localhost:3000/api/posts');
-          if (!res.ok) throw new Error('無法取得文章資料');
-
-          const posts = await res.json();
-          const currentPost = posts.find(p => p.slug === slug);
-
-          if (!currentPost) {
-            document.getElementById('post-title').innerText = '404 - 文章不存在';
-            document.getElementById('post-content').innerHTML = `
-              <div class="p-8 text-center text-rose-500/80 border border-dashed border-rose-950/50 rounded-xl">
-                找不到指定戰術日誌文件 (${slug}.md)
-              </div>
-            `;
-            return;
-          }
-
-          // 填充文章 Header 資料
-          const title = currentPost.data?.title || currentPost.slug;
-          const category = currentPost.data?.category || 'Reserve (DevOps)';
-          const pubDate = currentPost.data?.pubDate ? new Date(currentPost.data.pubDate).toISOString().split('T')[0] : '';
-
-          document.title = `${title} // NARTDG`;
-          document.getElementById('post-title').innerText = title;
-          document.getElementById('post-category').innerText = category;
-          document.getElementById('post-date').innerText = pubDate;
-
-          // 使用 marked 渲染 Markdown
-          const markdownText = currentPost.content || '';
-          if (window.marked) {
-            document.getElementById('post-content').innerHTML = window.marked.parse(markdownText);
-          } else {
-            document.getElementById('post-content').innerText = markdownText;
-          }
-
-        } catch (err) {
-          console.error('載入失敗:', err);
-          document.getElementById('post-content').innerHTML = `
-            <div class="p-8 text-center text-rose-500/80 border border-dashed border-rose-950/50 rounded-xl">
-              連線至後端伺服器時發生錯誤
-            </div>
-          `;
-        }
-      }
-
-      fetchPost();
     </script>
   </body>
 </html>
