@@ -1,3 +1,5 @@
+version: '3.8'
+
 services:
   redis:
     image: redis:alpine
@@ -9,13 +11,14 @@ services:
     environment:
       - REDIS_HOST=redis
       - REDIS_PORT=6379
-    ports:
-      - "3000:3000"
+    # 移除 ports: "3000:3000"，阻斷外部直接存取後端 API
+    volumes:
+      - ./backend/article_library:/app/article_library
 
   frontend:
     build: ./frontend
     restart: always
     ports:
-      - "30080:4321"
+      - "30080:4321" # 全站唯一暴露在外的對外 Entrypoint
     depends_on:
       - backend
