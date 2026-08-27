@@ -1,0 +1,162 @@
+---
+import '../../styles/global.css';
+
+const { tag } = Astro.params;
+const url = new URL(Astro.request.url);
+const currentPage = parseInt(url.searchParams.get('page') || '1', 10);
+const pageSize = 4;
+
+let allFilteredPosts = [];
+
+try {
+  // Docker 內部容器間通訊，直接呼叫 http://backend:3000
+  const res = await fetch('http://backend:3000/api/posts');
+  if (res.ok) {
+    const allPosts = await res.json();
+    allFilteredPosts = allPosts
+      .map(post => ({
+        ...post,
+        data: {
+          ...post.data,
+          pubDate: new Date(post.data.pubDate)
+        }
+      }))
+      .filter(post => post.data.tags && post.data.tags.includes(tag))
+      .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+  }
+} catch (err) {
+  console.error('Failed to fetch posts from backend:', err);
+}
+
+// 分頁計算
+const totalPosts = allFilteredPosts.length;
+const totalPages = Math.ceil(totalPosts / pageSize) || 1;
+const startIndex = (currentPage - 1) * pageSize;
+const currentPagePosts = allFilteredPosts.slice(startIndex, startIndex + pageSize);
+
+const prevPageUrl = currentPage > 1 ? `/tags/${encodeURIComponent(tag ?? '')}?page=${currentPage - 1}` : null;
+const nextPageUrl = currentPage < totalPages ? `/tags/${encodeURIComponent(tag ?? '')}?page=${currentPage + 1}` : null;
+---
+
+<!DOCTYPE html>
+<html lang="zh-TW" class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>#{tag} - NARTDG 文章</title>
+  </head>
+  <body class="bg-[#030712] text-slate-300 font-mono min-h-screen p-6 md:p-16 antialiased">
+    <div class="max-w-5xl mx-auto space-y-10">
+      
+      <!-- Top Navigation Header -->
+      <div class="flex justify-between items-center border-b border-slate-800 pb-6">
+        <a href="/" class="text-sm md:text-base text-emerald-400 hover:text-emerald-300 flex items-center gap-2">
+          ← 返回首頁 (RETURN HOME)
+        </a>
+        <span class="text-xs text-slate-500 font-mono">TAG FILTER & PAGINATION ACTIVE</span>
+      </div>
+
+      <!-- Tag Header Banner -->
+      <div class="p-8 rounded-xl border border-slate-800 bg-[#0a101f]/80 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+        <div>
+          <div class="text-xs text-slate-500 tracking-wider uppercase mb-1">// 主題檢索 (INDEXED TAG)</div>
+          <h1 class="text-3xl font-bold text-emerald-400">#{tag}</h1>
+        </div>
+        <div class="text-sm text-slate-400 bg-slate-900 px-4 py-2 rounded-lg border border-slate-800 shrink-0">
+          共 <span class="text-cyan-400 font-bold">{totalPosts}</span> 篇相關文章
+          <span class="text-slate-600 mx-1">|</span>
+          頁數 <span class="text-emerald-400 font-bold">{currentPage}</span> / {totalPages}
+        </div>
+      </div>
+
+      <!-- 文章容器：使用 Grid 定義 4 個固定高度的列 (Rows) -->
+      <section class="grid grid-rows-4 gap-5 h-[760px]">
+        {currentPagePosts.map(post => (
+          <a 
+            href={`/posts/${post.slug}`}
+            class="group flex flex-col justify-between p-6 md:p-8 rounded-xl border border-slate-800/90 bg-[#0a101f]/60 hover:bg-[#0f172a]/80 hover:border-slate-700 transition-all duration-200 h-full"
+          >
+            <div>
+              <div class="flex justify-between items-start mb-2">
+                <h2 class="text-xl md:text-2xl font-bold text-slate-100 group-hover:text-emerald-400 transition-colors line-clamp-1">
+                  {post.data.title}
+                </h2>
+                
+                <span class="text-xs md:text-sm text-cyan-400 bg-slate-900/90 px-3.5 py-1.5 rounded-md border border-slate-800 shrink-0 ml-6">
+                  {post.data.category}
+                </span>
+              </div>
+
+              {post.data.description && (
+                <p class="text-sm md:text-base text-slate-300 leading-relaxed line-clamp-2">
+                  {post.data.description}
+                </p>
+              )}
+            </div>
+
+            <div class="flex items-center gap-4 text-xs md:text-sm text-slate-400 pt-2">
+              <time>{post.data.pubDate.toISOString().split('T')[0]}</time>
+              <span>•</span>
+              <div class="flex items-center gap-3 text-slate-400">
+                {post.data.tags.map(t => (
+                  <span class={t === tag ? "text-emerald-400 font-semibold" : ""}>#{t}</span>
+                ))}
+              </div>
+            </div>
+          </a>
+        ))}
+      </section>
+
+      <!-- Pagination Controls (位置永遠絕對固定) -->
+      {totalPages > 1 && (
+        <nav class="flex justify-between items-center pt-6 border-t border-slate-800/80 text-sm">
+          {prevPageUrl ? (
+            <a 
+              href={prevPageUrl} 
+              class="px-5 py-2.5 rounded-lg border border-slate-800 bg-[#0a101f] text-emerald-400 hover:bg-slate-800 hover:border-emerald-500 transition-all"
+            >
+              ← 上一頁 (PREV)
+            </a>
+          ) : (
+            <span class="px-5 py-2.5 rounded-lg border border-slate-900 bg-slate-950 text-slate-600 cursor-not-allowed">
+              ← 上一頁 (PREV)
+            </span>
+          )}
+
+          <div class="flex items-center gap-2">
+            {Array.from({ length: totalPages }, (_, i) => i + 1).map(pageNum => {
+              const pageUrl = `/tags/${encodeURIComponent(tag ?? '')}?page=${pageNum}`;
+              const isActive = pageNum === currentPage;
+              return (
+                <a
+                  href={pageUrl}
+                  class={`w-10 h-10 flex items-center justify-center rounded-lg border text-xs font-bold transition-all ${
+                    isActive
+                      ? "border-emerald-500 bg-emerald-500/10 text-emerald-400"
+                      : "border-slate-800 bg-[#0a101f] text-slate-400 hover:bg-slate-800 hover:text-slate-200"
+                  }`}
+                >
+                  {pageNum}
+                </a>
+              );
+            })}
+          </div>
+
+          {nextPageUrl ? (
+            <a 
+              href={nextPageUrl} 
+              class="px-5 py-2.5 rounded-lg border border-slate-800 bg-[#0a101f] text-emerald-400 hover:bg-slate-800 hover:border-emerald-500 transition-all"
+            >
+              下一頁 (NEXT) →
+            </a>
+          ) : (
+            <span class="px-5 py-2.5 rounded-lg border border-slate-900 bg-slate-950 text-slate-600 cursor-not-allowed">
+              下一頁 (NEXT) →
+            </span>
+          )}
+        </nav>
+      )}
+
+    </div>
+  </body>
+</html>
