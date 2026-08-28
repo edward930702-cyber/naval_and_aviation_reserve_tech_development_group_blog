@@ -4,6 +4,11 @@ import '../../styles/global.css';
 const { tag } = Astro.params;
 const decodedTag = tag ? decodeURIComponent(tag) : '';
 
+// 1. 取得當前頁碼 (預設為 1)
+const url = new URL(Astro.request.url);
+const currentPage = parseInt(url.searchParams.get('page') || '1', 10);
+const pageSize = 4; // 每頁最多顯示 4 篇文章
+
 let filteredPosts = [];
 
 try {
@@ -27,13 +32,21 @@ try {
 } catch (err) {
   console.error('SSR 抓取標籤文章失敗:', err);
 }
+
+// 2. 計算分頁數據
+const totalPosts = filteredPosts.length;
+const totalPages = Math.ceil(totalPosts / pageSize) || 1;
+
+// 截取當前頁碼該顯示的 4 篇文章
+const startIndex = (currentPage - 1) * pageSize;
+const paginatedPosts = filteredPosts.slice(startIndex, startIndex + pageSize);
 ---
 
 <html lang="zh-TW">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>標籤: #{decodedTag} // 海空軍預備技術開發群</title>
+    <title>標籤: #{decodedTag} (第 {currentPage} 頁) // 海空軍預備技術開發群</title>
   </head>
   <body class="bg-[#030712] text-slate-200 font-mono min-h-screen p-6 md:p-12">
     <div class="max-w-4xl mx-auto space-y-8">
@@ -48,13 +61,13 @@ try {
           // 標籤篩選: <span class="text-emerald-400">#{decodedTag}</span>
         </h1>
         <p class="text-xs text-slate-500">
-          共找到 {filteredPosts.length} 篇相關文章
+          共找到 {totalPosts} 篇相關文章 (頁次 {currentPage} / {totalPages})
         </p>
       </header>
 
       <main class="space-y-6">
-        {filteredPosts.length > 0 ? (
-          filteredPosts.map(post => (
+        {paginatedPosts.length > 0 ? (
+          paginatedPosts.map(post => (
             <article class="p-6 bg-slate-900/30 border border-slate-800/80 rounded-xl hover:border-slate-700 transition space-y-3">
               <div class="flex justify-between items-start">
                 <span class="text-xs px-3 py-1 bg-emerald-950/60 text-emerald-400 border border-emerald-800/40 rounded-md font-medium">
@@ -83,6 +96,41 @@ try {
           <div class="p-12 text-center text-sm text-slate-600 border border-dashed border-slate-800/80 rounded-xl">
             找不到包含標籤 #{decodedTag} 的文章
           </div>
+        )}
+
+        <!-- 分頁導覽控制按鈕 -->
+        {totalPages > 1 && (
+          <nav class="flex justify-between items-center pt-6 border-t border-slate-800/80 text-xs">
+            {currentPage > 1 ? (
+              <a 
+                href={`/tags/${encodeURIComponent(decodedTag)}?page=${currentPage - 1}`}
+                class="px-4 py-2 bg-slate-900 border border-slate-800 rounded-lg text-emerald-400 hover:bg-slate-800 transition"
+              >
+                &larr; 上一頁 (PREV)
+              </a>
+            ) : (
+              <span class="px-4 py-2 text-slate-600 border border-transparent cursor-not-allowed">
+                &larr; 上一頁 (PREV)
+              </span>
+            )}
+
+            <span class="text-slate-500">
+              PAGE <span class="text-emerald-400 font-bold">{currentPage}</span> OF {totalPages}
+            </span>
+
+            {currentPage < totalPages ? (
+              <a 
+                href={`/tags/${encodeURIComponent(decodedTag)}?page=${currentPage + 1}`}
+                class="px-4 py-2 bg-slate-900 border border-slate-800 rounded-lg text-emerald-400 hover:bg-slate-800 transition"
+              >
+                下一頁 (NEXT) &rarr;
+              </a>
+            ) : (
+              <span class="px-4 py-2 text-slate-600 border border-transparent cursor-not-allowed">
+                下一頁 (NEXT) &rarr;
+              </span>
+            )}
+          </nav>
         )}
       </main>
 
