@@ -1,6 +1,6 @@
 ---
-title: "從零開始打造一架飛機：Jan Roskam《飛機設計》全八冊導讀精華"
-description: "深入解析航太工程經典聖經《Airplane Design》，涵蓋初步尺寸估算、推進系統整合、氣動力計算、穩定性控制至成本評估等飛機設計八大核心階段。"
+title: "Aircraft Design 01"
+description: "初步解析航太工程經典聖經《Airplane Design》，涵蓋初步尺寸估算、推進系統整合、氣動力計算、穩定性控制至成本評估等飛機設計八大核心階段。"
 pubDate: 2026-08-28
 category: "航太工程"
 tags: ["Aircrafr Design"]
@@ -25,9 +25,6 @@ tags: ["Aircrafr Design"]
 
 ## 🛠️ 飛機設計八大階段
 
-────────────────────────────────────────────┐
-│                    《Airplane Design》 系統架構               │
-└─────────────────────────────────────────────────────────────┘
 Part I   │ ✈️ 初步尺寸估算 (Preliminary Sizing)
 Part II  │ 🚀 構型設計與推進系統 (Configuration & Propulsion)
 Part III │ 📐 駕駛艙、機身、機翼與尾翼佈局 (Layout & Cutaways)
