@@ -28,7 +28,7 @@ services:
       - PGID=1000
       - TZ=Asia/Taipei
       - SUBDOMAINS=nartdg-blog
-      - TOKEN=edad3adb-2d07-44e3-aa75-f4c2dda5c658
+      - TOKEN=你的DuckDNS專屬Token
       - LOG_FILE=true
     restart: unless-stopped
 
@@ -43,3 +43,11 @@ services:
     volumes:
       - ./npm/data:/data
       - ./npm/letsencrypt:/etc/letsencrypt
+
+  # 穿透中華電信數據機的隧道服務
+  tunnel:
+    image: linuxserver/openssh-server:latest
+    container_name: pinggy-tunnel
+    restart: unless-stopped
+    command: >
+      ssh -p 443 -R0:nginx-proxy-manager:80 -o StrictHostKeyChecking=no -o ServerAliveInterval=30 a.pinggy.io
