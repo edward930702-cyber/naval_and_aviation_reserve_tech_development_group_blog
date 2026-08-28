@@ -1,0 +1,9 @@
+tunnel: b9796ae8-1ccc-4509-831e-db38ea23970a
+credentials-file: /etc/cloudflared/b9796ae8-1ccc-4509-831e-db38ea23970a.json
+
+ingress:
+  # 將 www 的流量轉發給 Docker 內的 Nginx Proxy Manager
+  - hostname: www.nartdg-blog.run.place
+    service: http://nginx-proxy-manager:80
+  # 預設規則（回傳 404）
+  - service: http_status:404

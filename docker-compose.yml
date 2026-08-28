@@ -1,4 +1,4 @@
-
+version: '3.8'
 
 services:
   redis:
@@ -32,9 +32,10 @@ services:
       - ./npm/data:/data
       - ./npm/letsencrypt:/etc/letsencrypt
 
-  # 新增 Cloudflare 隧道服務
   cloudflared:
     image: cloudflare/cloudflared:latest
     container_name: cloudflared
     restart: always
+    volumes:
+      - ./config.yml:/etc/cloudflared/config.yml
     command: tunnel --no-autoupdate run --token eyJhIjoiYzNhODNmZTY1NzBmYTlmN2JhNTQ3ZDFlNjliOTFlMjQiLCJ0IjoiYjk3OTZhZTgtMWNjYy00NTA5LTgzMWUtZGIzOGVhMjM5NzBhIiwicyI6IlpERTNaRFEzT1dJdE0yTTRNUzAwWVRFeUxXSXpPREF0TjJFeE5EQTVPV0prTkRGaSJ9
