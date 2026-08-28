@@ -46,7 +46,7 @@ Part VIII│ 💰 成本估算與營運分析 (Cost Estimation)
   * 估算起飛總重（Take-off Weight, $W_0$）與燃料重量比例。
   * 設定初步翼面積（Wing Area）與推力/功率比。
 
-![Part I 封面照片](2026-08-28 082423.png)
+![Part I 封面照片](/image/2026-08-28_082423.png)
 
 ---
 
@@ -57,7 +57,7 @@ Part VIII│ 💰 成本估算與營運分析 (Cost Estimation)
   * 發動機（Propulsion System）的選型與安裝位置（機翼下方、尾部、機身內部）。
   * 進氣道與排氣系統的氣流匹配設計。
 
-![Part II 封面照片](2026-08-28 082634.png)
+![Part II 封面照片](2026-08-28_082634.png)
 
 ---
 
