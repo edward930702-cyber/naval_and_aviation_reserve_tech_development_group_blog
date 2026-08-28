@@ -46,7 +46,7 @@ Part VIII│ 💰 成本估算與營運分析 (Cost Estimation)
   * 估算起飛總重（Take-off Weight, $W_0$）與燃料重量比例。
   * 設定初步翼面積（Wing Area）與推力/功率比。
 
-![Part I 封面照片](2026-08-28_082423.png)
+![Part I 封面照片](2026-08-28 082423.png)
 
 ---
 
@@ -57,7 +57,7 @@ Part VIII│ 💰 成本估算與營運分析 (Cost Estimation)
   * 發動機（Propulsion System）的選型與安裝位置（機翼下方、尾部、機身內部）。
   * 進氣道與排氣系統的氣流匹配設計。
 
-![Part II 封面照片](2026-08-28_082634.png)
+![Part II 封面照片](2026-08-28 082634.png)
 
 ---
 
@@ -68,7 +68,7 @@ Part VIII│ 💰 成本估算與營運分析 (Cost Estimation)
   * 人體工學與駕駛艙視野佈局。
   * 客艙/貨艙空間配置與結構穿孔設計。
 
-![Part III 封面照片](2026-08-28_082906.png)
+![Part III 封面照片](2026-08-28 082906.png)
 
 ---
 
@@ -79,7 +79,7 @@ Part VIII│ 💰 成本估算與營運分析 (Cost Estimation)
   * 防翻覆與地面操控穩定性分析。
   * 液壓、電氣、環境控制（ECS）等機載系統空間規劃。
 
-![Part IV 封面照片](/image/2026-08-28_083549.png)
+![Part IV 封面照片](/image/2026-08-28 083549.png)
 
 ---
 
@@ -89,7 +89,7 @@ Part VIII│ 💰 成本估算與營運分析 (Cost Estimation)
   * 使用經驗公式與半結構法精確估算各部件重量（機翼、機身、起落架、發動機等）。
   * 重心（Center of Gravity, CG）變動範圍分析與 CG envelope 繪製。
 
-![Part V 封面照片](/image/2026-08-28_083859.png)
+![Part V 封面照片](/image/2026-08-28 083859.png)
 
 ---
 
@@ -100,7 +100,7 @@ Part VIII│ 💰 成本估算與營運分析 (Cost Estimation)
   * 零升力阻力（$C_{D0}$）與感應阻力計算。
   * 不同飛行高度與速度下的可用推力/功率分析。
 
-![Part VI 封面照片](/image/2026-08-28_083937.png)
+![Part VI 封面照片](/image/2026-08-28 083937.png)
 
 ---
 
@@ -111,7 +111,7 @@ Part VIII│ 💰 成本估算與營運分析 (Cost Estimation)
   * 滿足**聯邦航空法規（FAR）**與**軍用標準（Military Requirements）**的性能測試基準。
   * 升限、爬升率、起降距離與轉彎性能計算。
 
-![Part VII 封面照片](/image/2026-08-28_084007.png)
+![Part VII 封面照片](/image/2026-08-28 084007.png)
 
 ---
 
@@ -122,7 +122,7 @@ Part VIII│ 💰 成本估算與營運分析 (Cost Estimation)
   * 單機製造成本與量產學習曲線（Learning Curve）。
   * 航空公司直接營運成本（DOC）與間接營運成本（IOC）估算。
 
-![Part VIII 封面照片](/image/2026-08-28_084037.png)
+![Part VIII 封面照片](/image/2026-08-28 084037.png)
 
 ---
 
