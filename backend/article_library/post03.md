@@ -1,0 +1,24 @@
+---
+title: "Raptor Demo Arrives at Air Show London Skydrive"
+description: "U.S. Air Force Capt. Nick “Laz” Le Tourneau, pilot and commander of the F-22 Raptor Aerial Demonstration Team, arrives at Air Show London Skydrive 2026, London, Ontario Canada, August 19, 2026."
+pubDate: "2026-08-21"
+category: "Military"
+tags: ["系統機能測試"]
+---
+
+![F-22 Raptor](500h_q95.webp)
+
+## 新聞內容 (News Content)
+
+U.S. Air Force Capt. Nick “Laz” Le Tourneau, pilot and commander of the F-22 Raptor Aerial Demonstration Team, arrives at Air Show London Skydrive 2026, London, Ontario Canada, August 19, 2026.
+
+美國空軍上尉 Nick “Laz” Le Tourneau（F-22 猛禽特技飛行表演隊飛行員兼指揮官）於 2026 年 8 月 19 日抵達加拿大安大略省倫敦市，準備參加 2026 年倫敦汽車航空展（Air Show London Skydrive 2026）。
+
+---
+
+## 詳細資訊 (Detailed Information)
+
+* **記者 (Journalist):** Lauren Diaz
+* **所屬單位 (Unit):** 1st Fighter Wing (第一戰鬥機聯隊)
+* **軍種 (Branch):** Air Force (美國空軍)
+* **地點/國家 (Country):** London, Ontario, Canada (加拿大)
