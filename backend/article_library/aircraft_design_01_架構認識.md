@@ -25,14 +25,14 @@ tags: ["Aircrafr Design"]
 
 ## 🛠️ 飛機設計八大階段
 
-1.  初步尺寸估算 (Preliminary Sizing)<br>
-2.  構型設計與推進系統 (Configuration & Propulsion)<br>
-3.  駕駛艙、機身、機翼與尾翼佈局 (Layout & Cutaways)<br>
-4.  起落架與子系統佈局 (Landing Gear & Systems)<br>
-5.  各組件重量估算 (Component Weight)<br>
-6.  氣動力、推力與動力計算 (Aerodynamics & Power)<br>
-7.  穩定性、控制與性能 (Stability & Performance)<br>
-8.  成本估算與營運分析 (Cost Estimation)<br>
+:1.  初步尺寸估算 (Preliminary Sizing)<br>
+:2.  構型設計與推進系統 (Configuration & Propulsion)<br>
+:3.  駕駛艙、機身、機翼與尾翼佈局 (Layout & Cutaways)<br>
+:4.  起落架與子系統佈局 (Landing Gear & Systems)<br>
+:5.  各組件重量估算 (Component Weight)<br>
+:6.  氣動力、推力與動力計算 (Aerodynamics & Power)<br>
+:7.  穩定性、控制與性能 (Stability & Performance)<br>
+:8.  成本估算與營運分析 (Cost Estimation)<br>
 
 ---
 
