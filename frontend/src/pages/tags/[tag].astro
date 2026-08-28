@@ -48,7 +48,7 @@ try {
           // 標籤篩選: <span class="text-emerald-400">#{decodedTag}</span>
         </h1>
         <p class="text-xs text-slate-500">
-          共找到 {filteredPosts.length} 篇相關戰術日誌
+          共找到 {filteredPosts.length} 篇相關文章
         </p>
       </header>
 
@@ -68,7 +68,7 @@ try {
                 <a href={`/posts/${post.slug}`}>{post.title}</a>
               </h2>
               <p class="text-sm text-slate-400 line-clamp-2 leading-relaxed">
-                {post.description || '點擊進入檢視詳細戰術評估與程式碼實作。'}
+                {post.description || '點擊進入檢視。'}
               </p>
               <div class="flex gap-3 pt-2">
                 {post.tags.map(t => (
