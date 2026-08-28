@@ -17,6 +17,8 @@ services:
   frontend:
     build: ./frontend
     restart: always
+    ports:
+      - "4321:4321"  # 確保本機可以存取 4321 埠
     depends_on:
       - backend
 
@@ -36,6 +38,5 @@ services:
     image: cloudflare/cloudflared:latest
     container_name: cloudflared
     restart: always
-    volumes:
-      - ./config.yml:/etc/cloudflared/config.yml
+    network_mode: "host"  # 改為 host 模式，徹底解決 Docker 容器間找不到名稱與 Port 的問題
     command: tunnel --no-autoupdate run --token eyJhIjoiYzNhODNmZTY1NzBmYTlmN2JhNTQ3ZDFlNjliOTFlMjQiLCJ0IjoiYjk3OTZhZTgtMWNjYy00NTA5LTgzMWUtZGIzOGVhMjM5NzBhIiwicyI6IlpERTNaRFEzT1dJdE0yTTRNUzAwWVRFeUxXSXpPREF0TjJFeE5EQTVPV0prTkRGaSJ9
