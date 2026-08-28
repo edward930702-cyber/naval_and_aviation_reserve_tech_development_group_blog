@@ -3,7 +3,7 @@ title: "NAVAL & AVIATION RESERVE TECH DEVELOPMENT GROUP 創站第一篇文"
 description: "記錄關於海上與空中技術之業餘研究，主要以 AIAA 2025-2026 Design Competition 出發的研究為主。"
 pubDate: 2026-08-27
 category: "Software Architecture"
-tags: ["雜記"]
+tags: ["營運日誌"]
 ---
 
 > *"Engineering is not about avoiding failure, but about building resilience through rigour."*
