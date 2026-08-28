@@ -123,21 +123,6 @@ tags: ["Aircrafr Design"]
 
 ---
 
-## 📊 系列書籍總覽表
-
-| 卷數 | 英文原標題 | 中文翻譯 | 首次出版年份 |
-| :---: | :--- | :--- | :---: |
-| **Part I** | Preliminary Sizing of Airplanes | 飛機初步尺寸估算 | 1985 |
-| **Part II** | Preliminary Configuration Design and Integration of the Propulsion System | 初步構型設計與推進系統整合 | 1985 |
-| **Part III** | Layout Design of Cockpit, Fuselage, Wing and Empennage: Cutaways and Inboard Profiles | 駕駛艙、機身、機翼與尾翼佈局設計 | 1986 |
-| **Part IV** | Layout Design of Landing Gear and Systems | 起落架與系統佈局設計 | 1986 / 1989 |
-| **Part V** | Component Weight Estimation | 零組件重量估算 | 1985 |
-| **Part VI** | Preliminary Calculation of Aerodynamic, Thrust and Power Characteristics | 氣動力、推力與動力特性初步計算 | 1987 |
-| **Part VII** | Determination of Stability, Control and Performance Characteristics | 穩定性、控制與飛行性能特性測定 | 1988 |
-| **Part VIII** | Airplane Cost Estimation: Design, Development, Manufacturing and Operating | 飛機成本估算：設計、開發、製造與營運 | 1990 |
-
----
-
 ## 💡 結語
 
 Dr. Jan Roskam 的《Airplane Design》全套八冊，從概念發想一直延伸至商業營運，系統化地建構了近代航空器工程設計的完整論述。無論是航太系學生、工程師，或是航空愛好者，這套作品都是不可多得的珍貴寶典！
