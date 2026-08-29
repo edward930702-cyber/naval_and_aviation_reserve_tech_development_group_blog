@@ -1,13 +1,17 @@
-version: '3.8'
-
 services:
   redis:
     image: redis:alpine
+    container_name: redis
     restart: always
+    ports:
+      - "6379:6379"  # 若只需容器內連線可將此行移除，僅留內網連線
 
   backend:
     build: ./backend
+    container_name: backend
     restart: always
+    ports:
+      - "3000:3000"  # 假設後端 Node.js 服務監聽 3000 埠
     environment:
       - REDIS_HOST=redis
       - REDIS_PORT=6379
@@ -16,27 +20,9 @@ services:
 
   frontend:
     build: ./frontend
+    container_name: frontend
     restart: always
     ports:
-      - "4321:4321"  # 確保本機可以存取 4321 埠
+      - "4321:4321"  # Astro 前端預設 4321 埠
     depends_on:
       - backend
-
-  nginx-proxy-manager:
-    image: 'jc21/nginx-proxy-manager:latest'
-    container_name: nginx-proxy-manager
-    restart: unless-stopped
-    ports:
-      - '80:80'
-      - '443:443'
-      - '81:81'
-    volumes:
-      - ./npm/data:/data
-      - ./npm/letsencrypt:/etc/letsencrypt
-
-  cloudflared:
-    image: cloudflare/cloudflared:latest
-    container_name: cloudflared
-    restart: always
-    network_mode: "host"  # 改為 host 模式，徹底解決 Docker 容器間找不到名稱與 Port 的問題
-    command: tunnel --no-autoupdate run --token eyJhIjoiYzNhODNmZTY1NzBmYTlmN2JhNTQ3ZDFlNjliOTFlMjQiLCJ0IjoiYjk3OTZhZTgtMWNjYy00NTA5LTgzMWUtZGIzOGVhMjM5NzBhIiwicyI6IlpERTNaRFEzT1dJdE0yTTRNUzAwWVRFeUxXSXpPREF0TjJFeE5EQTVPV0prTkRGaSJ9
