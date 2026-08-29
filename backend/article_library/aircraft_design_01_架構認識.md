@@ -38,9 +38,9 @@ tags: ["Aircrafr Design"]
 <p style="color: #cbd5e1; font-size: 1rem; line-height: 1.75; margin-bottom: 1rem;">
   首印年份：1985 年<br>
   核心重點：<br>
-  &emsp;&emsp;確定任務需求（Mission Requirements）：航程、巡航速度、載重（Payload）。<br>
-  &emsp;&emsp;估算起飛總重（Take-off Weight, $W_0$）與燃料重量比例。<br>
-  &emsp;&emsp;設定初步翼面積（Wing Area）與推力/功率比。<br>
+  &emsp;&emsp;&emsp;&emsp;1.確定任務需求（Mission Requirements）：航程、巡航速度、載重（Payload）。<br>
+  &emsp;&emsp;&emsp;&emsp;2.估算起飛總重（Take-off Weight, $W_0$）與燃料重量比例。<br>
+  &emsp;&emsp;&emsp;&emsp;3.設定初步翼面積（Wing Area）與推力/功率比。<br>
   <img src="/image/2026-08-28_082423.png" alt="測試圖片"/>
 </p>
 
