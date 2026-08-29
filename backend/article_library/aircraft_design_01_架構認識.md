@@ -1,6 +1,6 @@
 ---
 title: "Aircraft Design 01"
-description: "初步解析航太工程經典聖經《Airplane Design》，涵蓋初步尺寸估算、推進系統整合、氣動力計算、穩定性控制至成本評估等飛機設計八大核心階段。"
+description: "初步解析《Airplane Design》初步尺寸估算、推進系統整合、氣動力計算、穩定性控制至成本評估等飛機設計八大核心階段。"
 pubDate: 2026-08-28
 category: "航太工程"
 tags: ["Aircrafr Design"]
@@ -74,37 +74,46 @@ tags: ["Aircrafr Design"]
   &emsp;<br>
 </p>
 
-### 🔹 Part IV：起落架與系統佈局設計 (Layout Design of Landing Gear and Systems)
-* **首印年份**：1986 年 (平裝) / 1989 年 (精裝)
-* **核心重點**：
-  * 起落架（Landing Gear）幾何佈局與收放機制（前三點 vs. 後三點）。
-  * 防翻覆與地面操控穩定性分析。
-  * 液壓、電氣、環境控制（ECS）等機載系統空間規劃。
+<h3 style="font-size: 1.125rem; font-weight: bold; color: #cbd5e1; margin-top: 18px;  padding-bottom: 6px;">
+  Part IV：起落架與系統佈局設計 (Layout Design of Landing Gear and Systems)
+</h3>
+<p style="color: #cbd5e1; font-size: 1rem; line-height: 1.75; margin-bottom: 1rem;">
+  首印年份：1986 年 (平裝) / 1989 年 (精裝)<br>
+  核心重點：<br>
+  &emsp;&emsp;&emsp;&emsp;1.起落架（Landing Gear）幾何佈局與收放機制（前三點 vs. 後三點）。<br>
+  &emsp;&emsp;&emsp;&emsp;2.防翻覆與地面操控穩定性分析。<br>
+  &emsp;&emsp;&emsp;&emsp;3.液壓、電氣、環境控制（ECS）等機載系統空間規劃。<br>
+  &emsp;<br>
+  <img src="/image/2026-08-28_083549.png" alt="PART IV 封面"/>
+  &emsp;<br>
+</p>
 
-![Part IV 封面照片](/image/2026-08-28_083549.png)
+<h3 style="font-size: 1.125rem; font-weight: bold; color: #cbd5e1; margin-top: 18px;  padding-bottom: 6px;">
+  Part V：零組件重量估算 (Component Weight Estimation)
+</h3>
+<p style="color: #cbd5e1; font-size: 1rem; line-height: 1.75; margin-bottom: 1rem;">
+  首印年份：1985 年<br>
+  核心重點：<br>
+  &emsp;&emsp;&emsp;&emsp;1.使用經驗公式與半結構法精確估算各部件重量（機翼、機身、起落架、發動機等）。<br>
+  &emsp;&emsp;&emsp;&emsp;2.重心（Center of Gravity, CG）變動範圍分析與 CG envelope 繪製。<br>
+  &emsp;<br>
+  <img src="/image/2026-08-28_083859.png" alt="PART V 封面"/>
+  &emsp;<br>
+</p>
 
----
-
-### 🔹 Part V：零組件重量估算 (Component Weight Estimation)
-* **首印年份**：1985 年
-* **核心重點**：
-  * 使用經驗公式與半結構法精確估算各部件重量（機翼、機身、起落架、發動機等）。
-  * 重心（Center of Gravity, CG）變動範圍分析與 CG envelope 繪製。
-
-![Part V 封面照片](/image/2026-08-28_083859.png)
-
----
-
-### 🔹 Part VI：氣動力、推力與動力特性初步計算 (Preliminary Calculation of Aerodynamic, Thrust and Power)
-* **首印年份**：1987 年
-* **核心重點**：
-  * 升力與阻力極線（Drag Polar）估算。
-  * 零升力阻力（$C_{D0}$）與感應阻力計算。
-  * 不同飛行高度與速度下的可用推力/功率分析。
-
-![Part VI 封面照片](/image/2026-08-28_083937.png)
-
----
+<h3 style="font-size: 1.125rem; font-weight: bold; color: #cbd5e1; margin-top: 18px;  padding-bottom: 6px;">
+  Part VI：氣動力、推力與動力特性初步計算 (Preliminary Calculation of Aerodynamic, Thrust and Power)
+</h3>
+<p style="color: #cbd5e1; font-size: 1rem; line-height: 1.75; margin-bottom: 1rem;">
+  首印年份：1987 年<br>
+  核心重點：<br>
+  &emsp;&emsp;&emsp;&emsp;1.升力與阻力極線（Drag Polar）估算。<br>
+  &emsp;&emsp;&emsp;&emsp;2.零升力阻力（<span style="font-family: serif; font-style: italic;">C<sub>D0</sub></span>）與感應阻力計算。<br>
+  &emsp;&emsp;&emsp;&emsp;3.不同飛行高度與速度下的可用推力/功率分析。<br>
+  &emsp;<br>
+  <img src="/image/2026-08-28_083937.png" alt="PART VI 封面"/>
+  &emsp;<br>
+</p>
 
 ### 🔹 Part VII：穩定性、控制與飛行性能特性測定 (Stability, Control and Performance Characteristics)
 * **首印年份**：1988 年
