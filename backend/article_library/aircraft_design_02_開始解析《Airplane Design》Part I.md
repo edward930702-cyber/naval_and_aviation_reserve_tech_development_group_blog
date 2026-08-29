@@ -38,6 +38,14 @@ tags: ["Aircrafr Design"]
     若在研究計畫進行期間顯露出問題無法在合理的時間或成本內解決，則該項設計可能會被放棄或修改。<br>
     圖 1.2 說明了本系列叢書所涵蓋的初步設計流程。<br>
     本系列叢書的結構編排如下：<br>
+    &emsp;&emsp;&emsp;&emsp;Part I.初步尺寸估算 (Preliminary Sizing)<br>
+    &emsp;&emsp;&emsp;&emsp;Part II.構型設計與推進系統 (Configuration & Propulsion)<br>
+    &emsp;&emsp;&emsp;&emsp;Part III.駕駛艙、機身、機翼與尾翼佈局 (Layout & Cutaways)<br>
+    &emsp;&emsp;&emsp;&emsp;Part IV.起落架與子系統佈局 (Landing Gear & Systems)<br>
+    &emsp;&emsp;&emsp;&emsp;Part V.各組件重量估算 (Component Weight)<br>
+    &emsp;&emsp;&emsp;&emsp;Part VI.氣動力、推力與動力計算 (Aerodynamics & Power)<br>
+    &emsp;&emsp;&emsp;&emsp;Part VII.穩定性、控制與性能 (Stability & Performance)<br>
+    &emsp;&emsp;&emsp;&emsp;Part VIII.成本估算與營運分析 (Cost Estimation)<br>
   </p>
 </p>
 
