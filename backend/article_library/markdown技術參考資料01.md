@@ -5,7 +5,7 @@ pubDate: 2026-08-27
 category: "Software Architecture"
 tags: ["markdown技術參考資料"]
 ---
-##### 主標題
+## 主標題
 標題的語法
 <div style="background-color: #333333; color: #ffffff; padding: 15px; border-radius: 5px;">
   標題<br>
