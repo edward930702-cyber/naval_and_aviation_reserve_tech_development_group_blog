@@ -13,7 +13,8 @@ tags: ["Aircrafr Design"]
   Aircraft Design 的翻譯與解析是一開始想要建這個站的初始理由之一。<br>
   這本書沒有中文翻譯本也沒有中文使用解析，讓我在AIAA競賽期間使用起來甚為不方便(小弟英文就不是很好，真是抱歉喔~)<br>
   有了這個這個網站，現在終於可以對整套書做全面性的翻譯、導讀與整理啦~~~~~~TT。<br>
-  是說關於版權問題的部分......平時這個網站不會開放到網際網路(純粹在自家區域網路內開放)因此暫時沒什麼大問題......吧><<br>
+  是說關於版權問題的部分......平時這個網站不會開放到網際網路(純粹在自家區域網路內開放)<br>
+  因此暫時沒什麼大問題......吧><<br>
   整體來說大概這樣，接著開始進入正題。<br>
 </p>
 
@@ -31,18 +32,18 @@ tags: ["Aircrafr Design"]
   8.成本估算與營運分析 (Cost Estimation)<br>
 </p>
 
----
+<h3 style="font-size: 1.5rem; font-weight: bold; color: cbd5e1; margin-top: 24px; border-bottom: 1px solid #374151; padding-bottom: 8px;">
+  Part I：飛機初步尺寸估算 (Preliminary Sizing)
+</h3>
+<p style="color: #cbd5e1; font-size: 1rem; line-height: 1.75; margin-bottom: 1rem;">
+  首印年份：1985 年<br>
+  核心重點：<br>
+  確定任務需求（Mission Requirements）：航程、巡航速度、載重（Payload）。<br>
+  估算起飛總重（Take-off Weight, $W_0$）與燃料重量比例。<br>
+  設定初步翼面積（Wing Area）與推力/功率比。<br>
+  <img src="/image/2026-08-28_082423.png" alt="測試圖片"/>
+</p>
 
-### 🔹 Part I：飛機初步尺寸估算 (Preliminary Sizing)
-* **首印年份**：1985 年
-* **核心重點**：
-  * 確定任務需求（Mission Requirements）：航程、巡航速度、載重（Payload）。
-  * 估算起飛總重（Take-off Weight, $W_0$）與燃料重量比例。
-  * 設定初步翼面積（Wing Area）與推力/功率比。
-
-![Part I 封面照片](/image/2026-08-28_082423.png)
-
----
 
 ### 🔹 Part II：初步構型設計與推進系統整合 (Preliminary Configuration Design & Propulsion Integration)
 * **首印年份**：1985 年
