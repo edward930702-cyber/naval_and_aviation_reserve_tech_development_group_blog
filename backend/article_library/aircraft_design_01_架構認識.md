@@ -42,6 +42,7 @@ tags: ["Aircrafr Design"]
   &emsp;&emsp;&emsp;&emsp;1.確定任務需求（Mission Requirements）：航程、巡航速度、載重（Payload）。<br>
   &emsp;&emsp;&emsp;&emsp;2.估算起飛總重（Take-off Weight, <span style="font-family: serif; font-style: italic;">W<sub>0</sub></span>）與燃料重量比例。<br>
   &emsp;&emsp;&emsp;&emsp;3.設定初步翼面積（Wing Area）與推力/功率比。<br>
+  &emsp;<br>
   <img src="/image/2026-08-28_082423.png" alt="PART I 封面"/>
 </p>
 
@@ -54,6 +55,7 @@ tags: ["Aircrafr Design"]
   &emsp;&emsp;&emsp;&emsp;1.選擇飛機整體外觀構型（高單翼/低單翼、鴨翼/傳統尾翼等）。<br>
   &emsp;&emsp;&emsp;&emsp;2.發動機（Propulsion System）的選型與安裝位置（機翼下方、尾部、機身內部）。<br>
   &emsp;&emsp;&emsp;&emsp;3.進氣道與排氣系統的氣流匹配設計。<br>
+  &emsp;<br>
   <img src="/image/2026-08-28_082634.png" alt="PART II 封面"/>
 </p>
 
@@ -66,6 +68,7 @@ tags: ["Aircrafr Design"]
   &emsp;&emsp;&emsp;&emsp;1.剖面圖（Cutaways）與內部輪廓（Inboard Profiles）繪製。<br>
   &emsp;&emsp;&emsp;&emsp;2.人體工學與駕駛艙視野佈局。<br>
   &emsp;&emsp;&emsp;&emsp;3.客艙/貨艙空間配置與結構穿孔設計。<br>
+  &emsp;<br>
   <img src="/image/2026-08-28_082906.png" alt="PART III 封面"/>
 </p>
 
