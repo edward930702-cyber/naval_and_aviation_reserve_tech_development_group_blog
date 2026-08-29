@@ -52,7 +52,14 @@ tags: ["Aircrafr Design"]
     &emsp;<br>
     第一部分（PART I）的宗旨，在於提出一種針對給定任務規範進行飛機初步尺寸估算（preliminary sizing）的快速方法。<br>
     初步尺寸估算的定義為：透過該過程，得出下列飛機設計參數的數值定義：<br>
-    &emsp;&emsp;&emsp;&emsp;*Gross Take-off Weight, W<sub>TO</sub>
+    &emsp;&emsp;&emsp;&emsp;*Gross Take-off Weight, W<sub>TO</sub><br>
+    &emsp;&emsp;&emsp;&emsp;*Empty Weight, W<sub>E</sub><br>
+    &emsp;&emsp;&emsp;&emsp;*Mission Fuel Weight, W<sub>F</sub><br>
+    &emsp;&emsp;&emsp;&emsp;*Maximum Required Take-off Thrust, T<sub>TO</sub> or Take-off Power, P<sub>TO</sub><br>
+    &emsp;&emsp;&emsp;&emsp;*Wing Area, S and Wing Aspect Ratio, A<br>
+    &emsp;&emsp;&emsp;&emsp;*Maximum Required Lift Coefficient (Clean), C<sub>L<sub>max</sub></sub><br>
+    &emsp;&emsp;&emsp;&emsp;*Maximum Required Lift Coefficient for Take-off, C<sub>L<sub>max<sub>TO</sub></sub></sub><br>
+    &emsp;&emsp;&emsp;&emsp;*Maximum Required Lift Coefficient for Landing, C<sub>L<sub>max<sub>L</sub></sub></sub> or C<sub>L<sub>max<sub>PA</sub></sub></sub><br>
   </p>
 </p>
 
