@@ -19,7 +19,7 @@ tags: ["Aircrafr Design"]
 </p>
 
 <h2 style="font-size: 1.5rem; font-weight: bold; color: cbd5e1; margin-top: 24px; border-bottom: 1px solid #374151; padding-bottom: 8px;">
-  二、飛機設計流程
+  二、架構初步審視(其實就是設計流程)
 </h2>
 <p style="color: #cbd5e1; font-size: 1rem; line-height: 1.75; margin-bottom: 1rem;">
   1.初步尺寸估算 (Preliminary Sizing)<br>
@@ -40,22 +40,23 @@ tags: ["Aircrafr Design"]
   首印年份：1985 年<br>
   核心重點：<br>
   &emsp;&emsp;&emsp;&emsp;1.確定任務需求（Mission Requirements）：航程、巡航速度、載重（Payload）。<br>
-  &emsp;&emsp;&emsp;&emsp;2.估算起飛總重（Take-off Weight, $W_0$）與燃料重量比例。<br>
+  &emsp;&emsp;&emsp;&emsp;2.估算起飛總重（Take-off Weight, <span style="font-family: serif; font-style: italic;">W<sub>0</sub></span>）與燃料重量比例。<br>
   &emsp;&emsp;&emsp;&emsp;3.設定初步翼面積（Wing Area）與推力/功率比。<br>
-  <img src="/image/2026-08-28_082423.png" alt="測試圖片"/>
+  <img src="/image/2026-08-28_082423.png" alt="PART I 封面"/>
 </p>
 
+<h3 style="font-size: 1.125rem; font-weight: bold; color: #cbd5e1; margin-top: 18px;  padding-bottom: 6px;">
+  Part II：初步構型設計與推進系統整合 (Preliminary Configuration Design & Propulsion Integration)
+</h3>
+<p style="color: #cbd5e1; font-size: 1rem; line-height: 1.75; margin-bottom: 1rem;">
+  首印年份：1985 年<br>
+  核心重點：<br>
+  &emsp;&emsp;&emsp;&emsp;1.選擇飛機整體外觀構型（高單翼/低單翼、鴨翼/傳統尾翼等）。<br>
+  &emsp;&emsp;&emsp;&emsp;2.發動機（Propulsion System）的選型與安裝位置（機翼下方、尾部、機身內部）。<br>
+  &emsp;&emsp;&emsp;&emsp;3.進氣道與排氣系統的氣流匹配設計。<br>
+  <img src="/image/2026-08-28_082634.png" alt="PART II 封面"/>
+</p>
 
-### 🔹 Part II：初步構型設計與推進系統整合 (Preliminary Configuration Design & Propulsion Integration)
-* **首印年份**：1985 年
-* **核心重點**：
-  * 選擇飛機整體外觀構型（高單翼/低單翼、鴨翼/傳統尾翼等）。
-  * 發動機（Propulsion System）的選型與安裝位置（機翼下方、尾部、機身內部）。
-  * 進氣道與排氣系統的氣流匹配設計。
-
-![Part II 封面照片](/image/2026-08-28_082634.png)
-
----
 
 ### 🔹 Part III：駕駛艙、機身、機翼與尾翼佈局設計 (Layout Design of Cockpit, Fuselage, Wing and Empennage)
 * **首印年份**：1986 年
