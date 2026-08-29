@@ -11,7 +11,7 @@ services:
     container_name: backend
     restart: always
     ports:
-      - "3000:3000"  # 假設後端 Node.js 服務監聽 3000 埠
+      - "127.0.0.1:3000:3000"  # 限制僅限 Ubuntu 本機 (Loopback) 存取
     environment:
       - REDIS_HOST=redis
       - REDIS_PORT=6379
