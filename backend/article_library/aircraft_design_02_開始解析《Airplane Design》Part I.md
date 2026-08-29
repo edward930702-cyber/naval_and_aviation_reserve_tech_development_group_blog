@@ -49,6 +49,10 @@ tags: ["Aircrafr Design"]
     &emsp;&emsp;&emsp;&emsp;Part VI.氣動力、推力與動力計算 (Aerodynamics & Power)<br>
     &emsp;&emsp;&emsp;&emsp;Part VII.穩定性、控制與性能 (Stability & Performance)<br>
     &emsp;&emsp;&emsp;&emsp;Part VIII.成本估算與營運分析 (Cost Estimation)<br>
+    &emsp;<br>
+    第一部分（PART I）的宗旨，在於提出一種針對給定任務規範進行飛機初步尺寸估算（preliminary sizing）的快速方法。<br>
+    初步尺寸估算的定義為：透過該過程，得出下列飛機設計參數的數值定義：<br>
+    &emsp;&emsp;&emsp;&emsp;*Gross Take-off Weight, W<sub>TO</sub>
   </p>
 </p>
 
