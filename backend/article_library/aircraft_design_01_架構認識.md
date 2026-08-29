@@ -32,15 +32,15 @@ tags: ["Aircrafr Design"]
   8.成本估算與營運分析 (Cost Estimation)<br>
 </p>
 
-<h3 style="font-size: 1.5rem; font-weight: bold; color: cbd5e1; margin-top: 24px; border-bottom: 1px solid #374151; padding-bottom: 8px;">
+<h4 style="color: cbd5e1; margin-top: 24px; border-bottom: 1px solid #374151;">
   Part I：飛機初步尺寸估算 (Preliminary Sizing)
-</h3>
+</h4>
 <p style="color: #cbd5e1; font-size: 1rem; line-height: 1.75; margin-bottom: 1rem;">
   首印年份：1985 年<br>
   核心重點：<br>
-  確定任務需求（Mission Requirements）：航程、巡航速度、載重（Payload）。<br>
-  估算起飛總重（Take-off Weight, $W_0$）與燃料重量比例。<br>
-  設定初步翼面積（Wing Area）與推力/功率比。<br>
+  &emsp;&emsp;確定任務需求（Mission Requirements）：航程、巡航速度、載重（Payload）。<br>
+  &emsp;&emsp;估算起飛總重（Take-off Weight, $W_0$）與燃料重量比例。<br>
+  &emsp;&emsp;設定初步翼面積（Wing Area）與推力/功率比。<br>
   <img src="/image/2026-08-28_082423.png" alt="測試圖片"/>
 </p>
 
