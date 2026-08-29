@@ -6,7 +6,7 @@ category: "Software Architecture"
 tags: ["markdown技術參考資料"]
 ---
 
-```python
-def hello():
-    print("Hello World")
+```
+副標
+---
 ```
