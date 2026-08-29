@@ -6,33 +6,30 @@ category: "航太工程"
 tags: ["Aircrafr Design"]
 ---
 
-# ✈️ 從零開始打造一架飛機：Jan Roskam 的《飛機設計》精華指南
+<h2 style="font-size: 1.5rem; font-weight: bold; color: cbd5e1; margin-top: 24px; border-bottom: 1px solid #374151; padding-bottom: 8px;">
+  一、前言
+</h2>
+<p style="color: #cbd5e1; font-size: 1rem; line-height: 1.75; margin-bottom: 1rem;">
+  Aircraft Design 的翻譯與解析是一開始想要建這個站的初始理由之一。<br>
+  這本書沒有中文翻譯本也沒有中文使用解析，讓我在AIAA競賽期間使用起來甚為不方便(小弟英文就不是很好，真是抱歉喔~)<br>
+  有了這個這個網站，現在終於可以對整套書做全面性的翻譯、導讀與整理啦~~~~~~TT。<br>
+  是說關於版權問題的部分......平時這個網站不會開放到網際網路(純粹在自家區域網路內開放)因此暫時沒什麼大問題......吧><<br>
+  整體來說大概這樣，接著開始進入正題。<br>
+</p>
 
-> 「設計一架飛機，是一場在重量、氣動力與成本之間不斷妥協的藝術。」
-> —— 摘自 Dr. Jan Roskam 經典著作《Airplane Design》
-
----
-
-## 📖 前言：航太人的經典聖經
-
-在航太工程與飛機設計的領域中，**Jan Roskam 教授**（堪薩斯大學 Ackers 傑出教授）所著的 **《Airplane Design》（飛機設計）** 系列無疑是最權威、最系統化的經典教材之一。
-
-全書共分為八個核心部分（Part I ~ Part VIII），帶領工程師從**一張白紙**出發，逐步完成飛機的初步尺寸估算、系統整合、氣動計算，直到最終的成本評估。
-
-以下為您整理這八大核心章節的重點精華與設計脈絡：
-
----
-
-## 🛠️ 飛機設計八大階段
-
-*1.  初步尺寸估算 (Preliminary Sizing)<br>
-*2.  構型設計與推進系統 (Configuration & Propulsion)<br>
-*3.  駕駛艙、機身、機翼與尾翼佈局 (Layout & Cutaways)<br>
-*4.  起落架與子系統佈局 (Landing Gear & Systems)<br>
-*5.  各組件重量估算 (Component Weight)<br>
-*6.  氣動力、推力與動力計算 (Aerodynamics & Power)<br>
-*7.  穩定性、控制與性能 (Stability & Performance)<br>
-*8.  成本估算與營運分析 (Cost Estimation)<br>
+<h2 style="font-size: 1.5rem; font-weight: bold; color: cbd5e1; margin-top: 24px; border-bottom: 1px solid #374151; padding-bottom: 8px;">
+  二、飛機設計流程
+</h2>
+<p style="color: #cbd5e1; font-size: 1rem; line-height: 1.75; margin-bottom: 1rem;">
+  1.初步尺寸估算 (Preliminary Sizing)<br>
+  2.構型設計與推進系統 (Configuration & Propulsion)<br>
+  3.駕駛艙、機身、機翼與尾翼佈局 (Layout & Cutaways)<br>
+  4.起落架與子系統佈局 (Landing Gear & Systems)<br>
+  5.各組件重量估算 (Component Weight)<br>
+  6.氣動力、推力與動力計算 (Aerodynamics & Power)<br>
+  7.穩定性、控制與性能 (Stability & Performance)<br>
+  8.成本估算與營運分析 (Cost Estimation)<br>
+</p>
 
 ---
 
