@@ -60,6 +60,22 @@ tags: ["Aircrafr Design"]
     &emsp;&emsp;&emsp;&emsp;*Maximum Required Lift Coefficient (Clean), C<sub>L<sub>max</sub></sub><br>
     &emsp;&emsp;&emsp;&emsp;*Maximum Required Lift Coefficient for Take-off, C<sub>L<sub>max<sub>TO</sub></sub></sub><br>
     &emsp;&emsp;&emsp;&emsp;*Maximum Required Lift Coefficient for Landing, C<sub>L<sub>max<sub>L</sub></sub></sub> or C<sub>L<sub>max<sub>PA</sub></sub></sub><br>
+    &emsp;<br>
+    本書假設已可取得該飛機的任務規範。在任務規範中，通常會以數值明確定義的典型參數包含：<br>
+    &emsp;&emsp;&emsp;&emsp;*Payload and type of payload<br>
+    &emsp;&emsp;&emsp;&emsp;*Range and/or loiter requirements<br>
+    &emsp;&emsp;&emsp;&emsp;*Cruise speed and altitude<br>
+    &emsp;&emsp;&emsp;&emsp;*Field length for take-off and for landing<br>
+    &emsp;&emsp;&emsp;&emsp;*Fuel reserves<br>
+    &emsp;&emsp;&emsp;&emsp;*Climb requirements<br>
+    &emsp;&emsp;&emsp;&emsp;*Maneuvering requirements<br>
+    &emsp;&emsp;&emsp;&emsp;*Certification base (For example: Experimental, FAR 23, FAR 25 or Military)<br>
+    &emsp;<br>
+    有些任務規範所包含的細節會比其他規範詳細得多。這取決於撰寫規範的客戶，以及該客戶希望給予飛機設計師多少設計彈性。<br>
+    本書所介紹的尺寸估算方法依序如下:<br>
+    &emsp;&emsp;&emsp;&emsp;第 2 章：估算起飛總重 W<sub>TO</sub>、空重 W<sub>E</sub> 以及任務燃料重 W<sub>F</sub>。<br>
+    &emsp;&emsp;&emsp;&emsp;第 3 章：估算機翼面積 S、機翼展弦比 A、起飛推力 T<sub>TO</sub> 以及最大升力係數 C<sub>L<sub>max</sub></sub>、C<sub>L<sub>max<sub>TO</sub></sub></sub> 與 C<sub>L<sub>max<sub>L</sub></sub></sub>。<br>
+    &emsp;&emsp;&emsp;&emsp;第 4 章：提供初步尺寸估算流程的使用者指南。<br>
   </p>
 </p>
 
