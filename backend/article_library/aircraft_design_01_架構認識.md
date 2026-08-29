@@ -34,7 +34,8 @@ tags: ["Aircrafr Design"]
 
 
 <h3 style="font-size: 1.125rem; font-weight: bold; color: #cbd5e1; margin-top: 18px;  padding-bottom: 6px;">
-  Part I：飛機初步尺寸估算 (Preliminary Sizing)
+  Part I：飛機初步尺寸估算 <br>
+  (Preliminary Sizing)
 </h3>
 <p style="color: #cbd5e1; font-size: 1rem; line-height: 1.75; margin-bottom: 1rem;">
   首印年份：1985 年<br>
