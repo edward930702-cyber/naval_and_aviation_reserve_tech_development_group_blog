@@ -20,7 +20,7 @@ tags: ["Aircrafr Design"]
     符號表
   </p>
   <img src="/image/2026-08-30_032114.png" alt="symble"/>
-  <img src="/image/2026-08-28_082423.png" alt="PART I 封面"/>
+  <img src="/image/2026-08-30_032114.png" alt="PART I 封面"/>
 </p>
 
 <h2 style="font-size: 1.5rem; font-weight: bold; color: cbd5e1; margin-top: 24px; border-bottom: 1px solid #374151; padding-bottom: 8px;">
