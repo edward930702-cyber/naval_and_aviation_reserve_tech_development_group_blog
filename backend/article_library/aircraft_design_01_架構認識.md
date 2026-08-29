@@ -32,7 +32,8 @@ tags: ["Aircrafr Design"]
   8.成本估算與營運分析 (Cost Estimation)<br>
 </p>
 
-<h3 style="color: cbd5e1; margin-top: 24px;">
+
+<h3 style="font-size: 1.125rem; font-weight: bold; color: #cbd5e1; margin-top: 18px;  padding-bottom: 6px;">
   Part I：飛機初步尺寸估算 (Preliminary Sizing)
 </h3>
 <p style="color: #cbd5e1; font-size: 1rem; line-height: 1.75; margin-bottom: 1rem;">
