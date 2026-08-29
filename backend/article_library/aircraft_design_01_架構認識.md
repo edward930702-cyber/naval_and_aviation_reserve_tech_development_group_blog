@@ -34,8 +34,7 @@ tags: ["Aircrafr Design"]
 
 
 <h3 style="font-size: 1.125rem; font-weight: bold; color: #cbd5e1; margin-top: 18px;  padding-bottom: 6px;">
-  Part I：飛機初步尺寸估算 <br>
-  (Preliminary Sizing)
+  Part I：飛機初步尺寸估算(Preliminary Sizing)
 </h3>
 <p style="color: #cbd5e1; font-size: 1rem; line-height: 1.75; margin-bottom: 1rem;">
   首印年份：1985 年<br>
@@ -58,6 +57,7 @@ tags: ["Aircrafr Design"]
   &emsp;&emsp;&emsp;&emsp;3.進氣道與排氣系統的氣流匹配設計。<br>
   &emsp;<br>
   <img src="/image/2026-08-28_082634.png" alt="PART II 封面"/>
+  &emsp;<br>
 </p>
 
 <h3 style="font-size: 1.125rem; font-weight: bold; color: #cbd5e1; margin-top: 18px;  padding-bottom: 6px;">
@@ -71,6 +71,7 @@ tags: ["Aircrafr Design"]
   &emsp;&emsp;&emsp;&emsp;3.客艙/貨艙空間配置與結構穿孔設計。<br>
   &emsp;<br>
   <img src="/image/2026-08-28_082906.png" alt="PART III 封面"/>
+  &emsp;<br>
 </p>
 
 ### 🔹 Part IV：起落架與系統佈局設計 (Layout Design of Landing Gear and Systems)
