@@ -115,28 +115,38 @@ tags: ["Aircrafr Design"]
   &emsp;<br>
 </p>
 
-### 🔹 Part VII：穩定性、控制與飛行性能特性測定 (Stability, Control and Performance Characteristics)
-* **首印年份**：1988 年
-* **核心重點**：
-  * **靜態與動態穩定性**（Static & Dynamic Stability）分析。
-  * 滿足**聯邦航空法規（FAR）**與**軍用標準（Military Requirements）**的性能測試基準。
-  * 升限、爬升率、起降距離與轉彎性能計算。
+<h3 style="font-size: 1.125rem; font-weight: bold; color: #cbd5e1; margin-top: 18px;  padding-bottom: 6px;">
+  Part VII：穩定性、控制與飛行性能特性測定 (Stability, Control and Performance Characteristics)
+</h3>
+<p style="color: #cbd5e1; font-size: 1rem; line-height: 1.75; margin-bottom: 1rem;">
+  首印年份：1988 年<br>
+  核心重點：<br>
+  &emsp;&emsp;&emsp;&emsp;1.靜態與動態穩定性（Static & Dynamic Stability）分析。<br>
+  &emsp;&emsp;&emsp;&emsp;2.滿足聯邦航空法規（FAR）與軍用標準（Military Requirements）的性能測試基準。<br>
+  &emsp;&emsp;&emsp;&emsp;3.升限、爬升率、起降距離與轉彎性能計算。<br>
+  &emsp;<br>
+  <img src="/image/2026-08-28_084007.png" alt="Part VII 封面照片"/>
+  &emsp;<br>
+</p>
 
-![Part VII 封面照片](/image/2026-08-28_084007.png)
+<h3 style="font-size: 1.125rem; font-weight: bold; color: #cbd5e1; margin-top: 18px;  padding-bottom: 6px;">
+  Part VIII：飛機成本估算：設計、開發、製造與營運 (Airplane Cost Estimation)
+</h3>
+<p style="color: #cbd5e1; font-size: 1rem; line-height: 1.75; margin-bottom: 1rem;">
+  首印年份：1988 年<br>
+  核心重點：<br>
+  &emsp;&emsp;&emsp;&emsp;1.RDT&E 成本（研究、設計、測試與評估費用）。<br>
+  &emsp;&emsp;&emsp;&emsp;2.單機製造成本與量產學習曲線（Learning Curve）。<br>
+  &emsp;&emsp;&emsp;&emsp;3.航空公司直接營運成本（DOC）與間接營運成本（IOC）估算。<br>
+  &emsp;<br>
+  <img src="/image/2026-08-28_084037.png" alt="Part VIII 封面照片"/>
+  &emsp;<br>
+</p>
 
----
-
-### 🔹 Part VIII：飛機成本估算：設計、開發、製造與營運 (Airplane Cost Estimation)
-* **首印年份**：1990 年 (精裝)
-* **核心重點**：
-  * **RDT&E 成本**（研究、設計、測試與評估費用）。
-  * 單機製造成本與量產學習曲線（Learning Curve）。
-  * 航空公司直接營運成本（DOC）與間接營運成本（IOC）估算。
-
-![Part VIII 封面照片](/image/2026-08-28_084037.png)
-
----
-
-## 💡 結語
-
-Dr. Jan Roskam 的《Airplane Design》全套八冊，從概念發想一直延伸至商業營運，系統化地建構了近代航空器工程設計的完整論述。無論是航太系學生、工程師，或是航空愛好者，這套作品都是不可多得的珍貴寶典！
+<h2 style="font-size: 1.5rem; font-weight: bold; color: cbd5e1; margin-top: 24px; border-bottom: 1px solid #374151; padding-bottom: 8px;">
+  三、結語
+</h2>
+<p style="color: #cbd5e1; font-size: 1rem; line-height: 1.75; margin-bottom: 1rem;">
+  Dr. Jan Roskam 的《Airplane Design》全套八冊，從概念發想一直延伸至商業營運，系統化地建構了近代航空器工程設計的完整論述。<br>
+  無論是航太系學生、工程師，或是航空愛好者，這套作品都是不可多得的珍貴寶典！<br>
+</p>
