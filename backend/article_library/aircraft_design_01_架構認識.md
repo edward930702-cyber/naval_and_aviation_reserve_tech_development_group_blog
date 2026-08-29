@@ -57,17 +57,17 @@ tags: ["Aircrafr Design"]
   <img src="/image/2026-08-28_082634.png" alt="PART II 封面"/>
 </p>
 
-
-### 🔹 Part III：駕駛艙、機身、機翼與尾翼佈局設計 (Layout Design of Cockpit, Fuselage, Wing and Empennage)
-* **首印年份**：1986 年
-* **核心重點**：
-  * **剖面圖（Cutaways）**與**內部輪廓（Inboard Profiles）**繪製。
-  * 人體工學與駕駛艙視野佈局。
-  * 客艙/貨艙空間配置與結構穿孔設計。
-
-![Part III 封面照片](/image/2026-08-28_082906.png)
-
----
+<h3 style="font-size: 1.125rem; font-weight: bold; color: #cbd5e1; margin-top: 18px;  padding-bottom: 6px;">
+  Part III：駕駛艙、機身、機翼與尾翼佈局設計 (Layout Design of Cockpit, Fuselage, Wing and Empennage)
+</h3>
+<p style="color: #cbd5e1; font-size: 1rem; line-height: 1.75; margin-bottom: 1rem;">
+  首印年份：1986 年<br>
+  核心重點：<br>
+  &emsp;&emsp;&emsp;&emsp;1.剖面圖（Cutaways）與內部輪廓（Inboard Profiles）繪製。<br>
+  &emsp;&emsp;&emsp;&emsp;2.人體工學與駕駛艙視野佈局。<br>
+  &emsp;&emsp;&emsp;&emsp;3.客艙/貨艙空間配置與結構穿孔設計。<br>
+  <img src="/image/2026-08-28_082906.png" alt="PART III 封面"/>
+</p>
 
 ### 🔹 Part IV：起落架與系統佈局設計 (Layout Design of Landing Gear and Systems)
 * **首印年份**：1986 年 (平裝) / 1989 年 (精裝)
