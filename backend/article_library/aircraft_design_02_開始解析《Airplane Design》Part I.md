@@ -6,9 +6,6 @@ category: "航太工程"
 tags: ["Aircrafr Design"]
 ---
 
-<h2 style="font-size: 1.5rem; font-weight: bold; color: cbd5e1; margin-top: 24px; border-bottom: 1px solid #374151; padding-bottom: 8px;">
-  一、主文(編輯中)
-</h2>
 <p style="color: #cbd5e1; font-size: 1rem; line-height: 1.75; margin-bottom: 1rem;">
   <p style="color: #cbd5e1; font-weight: bold; font-size: 1.1rem; margin-top: 16px; margin-bottom: 6px;">
     Table of Symbles
