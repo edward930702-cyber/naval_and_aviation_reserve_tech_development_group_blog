@@ -38,14 +38,14 @@ tags: ["Aircrafr Design"]
     2.1 方法總綱
   </p>
   <p>
-  將起飛總重 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>TO</sub></span> 拆解的一種便利方式如下：<br>
+    將起飛總重 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>TO</sub></span> 拆解的一種便利方式如下：<br>
   </p>
   <p style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold; text-align: center; margin: 15px 0;">
     W<sub>TO</sub> = W<sub>OE</sub> + W<sub>F</sub> + W<sub>PL</sub>
     <span style="float: right; font-style: normal; font-weight: normal;">(2.1)</span>
   </p>
   <p>
-  其中：<br>
+    其中：<br>
   </p>
   <p>
     <span style="display: inline-block; margin-left: 20px;">
@@ -62,5 +62,22 @@ tags: ["Aircrafr Design"]
   <p style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold; text-align: center; margin: 15px 0;">
     W<sub>OE</sub> = W<sub>E</sub> + W<sub>tfo</sub> + W<sub>crew</sub>
     <span style="float: right; font-style: normal; font-weight: normal;">(2.2)</span>
+  </p>
+  <p style="font-family: Arial, 'Microsoft JhengHei', sans-serif; line-height: 1.8; color: #222;">
+    其中：<br>
+    <span style="display: inline-block; margin-left: 20px;">
+        <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>E</sub></span> 為空重，
+    </span><br>
+    <span style="display: inline-block; margin-left: 20px;">
+        <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>tfo</sub></span> 為所有殘留（=不可用）燃油與滑油的重量，
+    </span><br>
+    <span style="display: inline-block; margin-left: 20px;">
+        <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>crew</sub></span> 為操作飛機所需機組人員的重量。
+    </span><br><br>
+    必須記住的是，空重 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>E</sub></span> 有時會以下列方式細分：
+  </p>
+  <p style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold; text-align: center; margin: 15px 0;">
+    W<sub>E</sub> = W<sub>ME</sub> + W<sub>FEQ</sub>
+    <span style="float: right; font-style: normal; font-weight: normal;">(2.3)</span>
   </p>
 </p>
