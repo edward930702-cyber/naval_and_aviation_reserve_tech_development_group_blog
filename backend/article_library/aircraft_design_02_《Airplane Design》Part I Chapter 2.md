@@ -105,4 +105,7 @@ tags: ["Aircrafr Design"]
         <span style="text-decoration: underline; font-weight: bold;">要點 2：</span> 對於前面提到的十二種類型飛機，<span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">log<sub>10</sub>W<sub>TO</sub></span> 與 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">log<sub>10</sub>W<sub>E</sub></span> 之間存在線性關係。此點的圖表證據將在第 2.5 節中呈現。
     </span>
   </p>
-</p>
+  <p style="font-family: Arial, 'Microsoft JhengHei', sans-serif; line-height: 1.8; color: #222;">
+    基於這兩點，估算 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>TO</sub></span>、<span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>E</sub></span> 與 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>F</sub></span> 數值的過程包含以下步驟：
+  </p>
+</p> 
