@@ -31,5 +31,16 @@ tags: ["Aircrafr Design"]
     &emsp;&emsp;&emsp;&emsp;10. 軍用巡邏、轟炸及運輸機 (Military Patrol, Bomb and Transport Airplanes)<br>
     &emsp;&emsp;&emsp;&emsp;11. 飛艇、兩棲及浮筒水上飛機 (Flying Boats, Amphibious and Float Airplanes)<br>
     &emsp;&emsp;&emsp;&emsp;12. 超音速巡航飛機 (Supersonic Cruise Airplanes)
+    &emsp;<br>
+    <p style="color: #ffffff; font-weight: bold; font-size: 1.1rem; margin-top: 16px; margin-bottom: 6px;">
+      方法總綱
+    </p>
+    <p style="font-family: Arial, 'Microsoft JhengHei', sans-serif; line-height: 1.8; color: #222;">
+      將起飛總重 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>TO</sub></span> 拆解的一種便利方式如下：
+    </p>
+    <p style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold; text-align: center; margin: 15px 0;">
+      W<sub>TO</sub> = W<sub>OE</sub> + W<sub>F</sub> + W<sub>PL</sub>
+      <span style="float: right; font-style: normal; font-weight: normal;">(2.1)</span>
+    </p>
   </p>
 </p>
