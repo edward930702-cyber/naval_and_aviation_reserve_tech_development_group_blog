@@ -96,7 +96,7 @@ tags: ["Aircrafr Design"]
     <span style="display: inline-block; margin-left: 20px;">* 內裝與傢俱設施 (furnishings and interiors)</span><br>
     <span style="display: inline-block; margin-left: 20px;">* 飛機於執行預定任務期間所需的其他設備 (other equipment needed to operate the airplane during its intended mission)</span>
   </p>
-  <p style="font-family: Arial, 'Microsoft JhengHei', sans-serif; line-height: 1.8; color: #222;">
+  <p style="font-family: Arial, 'Microsoft JhengHei', sans-serif; line-height: 1.8; color: #cbd5e1;">
     在此階段，必須強調兩個關鍵點：<br><br>
     <span style="display: inline-block; margin-left: 20px;">
         <span style="text-decoration: underline; font-weight: bold;">要點 1：</span> 從非常基礎的考量來估算所需的任務燃油重量 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>F</sub></span> 並不困難。這將在第 2.4 節中說明。
