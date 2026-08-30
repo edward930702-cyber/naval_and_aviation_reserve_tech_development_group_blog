@@ -1,19 +1,13 @@
 ---
 title: "Aircraft Design 02"
-description: "開始解析《Airplane Design》Part I "
+description: "《Airplane Design》Part I Chapter 1. "
 pubDate: 2026-08-30
 category: "航太工程"
 tags: ["Aircrafr Design"]
 ---
 
 <h2 style="font-size: 1.5rem; font-weight: bold; color: cbd5e1; margin-top: 24px; border-bottom: 1px solid #374151; padding-bottom: 8px;">
-  一、前言
-</h2>
-<p style="color: #cbd5e1; font-size: 1rem; line-height: 1.75; margin-bottom: 1rem;">
-</p>
-
-<h2 style="font-size: 1.5rem; font-weight: bold; color: cbd5e1; margin-top: 24px; border-bottom: 1px solid #374151; padding-bottom: 8px;">
-  二、主文(編輯中)
+  一、主文(編輯中)
 </h2>
 <p style="color: #cbd5e1; font-size: 1rem; line-height: 1.75; margin-bottom: 1rem;">
   <p style="color: #cbd5e1; font-weight: bold; font-size: 1.1rem; margin-top: 16px; margin-bottom: 6px;">
@@ -81,34 +75,5 @@ tags: ["Aircrafr Design"]
     &emsp;<br>
     <img src="/image/2026-08-30_044418.png" alt="Figure 1.2"/>
     &emsp;<br>
-    <p class="mermaid">
-    graph TD
-        subgraph 民用飛機
-            A[獨立市場調查] <--> C[初步設計與權衡研究]
-            B[客戶需求] <--> C
-            C --> D[任務規範]
-        end
-
-        subgraph 軍用飛機
-            E[軍方明確作戰需求] <--> G[初步設計與權衡研究]
-            F[承包商向軍方提出需求] <--> G
-            G --> H[發布建議書徵求文件 RFP <br/> 內含任務規範]
-        end
-
-        D --> I[初步尺寸估算]
-        H --> I
-        I --> J[初步設計]
-        J --> K[若一切順利：<br/>全尺寸設計與開發]
-    </p>
-
-    <p style="text-align: center; font-weight: bold;">
-        圖 1.1 任務規範的演進過程及其與初步尺寸估算及設計之關係範例
-    </p>
   </p>
-</p>
-
-<h2 style="font-size: 1.5rem; font-weight: bold; color: cbd5e1; margin-top: 24px; border-bottom: 1px solid #374151; padding-bottom: 8px;">
-  三、結語
-</h2>
-<p style="color: #cbd5e1; font-size: 1rem; line-height: 1.75; margin-bottom: 1rem;">
 </p>
