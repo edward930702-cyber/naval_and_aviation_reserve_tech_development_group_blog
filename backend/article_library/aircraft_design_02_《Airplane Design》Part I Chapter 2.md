@@ -63,7 +63,7 @@ tags: ["Aircrafr Design"]
     W<sub>OE</sub> = W<sub>E</sub> + W<sub>tfo</sub> + W<sub>crew</sub>
     <span style="float: right; font-style: normal; font-weight: normal;">(2.2)</span>
   </p>
-  <p style="font-family: Arial, 'Microsoft JhengHei', sans-serif; line-height: 1.8; color: #222;">
+  <p style="font-family: Arial, 'Microsoft JhengHei', sans-serif; line-height: 1.8; color: #cbd5e1;">
     其中：<br>
     <span style="display: inline-block; margin-left: 20px;">
         <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>E</sub></span> 為空重，
