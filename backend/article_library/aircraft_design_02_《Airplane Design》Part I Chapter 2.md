@@ -160,5 +160,8 @@ tags: ["Aircrafr Design"]
     為了確定任務期間實際使用的燃油重量 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>F<sub>used</sub></sub></span>，將使用所謂的<span style="text-decoration: underline; font-weight: bold;">燃油比例法（fuel-fraction method）</span>。在此方法中，飛機任務被分解為數個任務階段。每個階段所使用的燃油可透過簡單計算得出，或根據經驗進行估算。<br><br>
     燃油比例法將透過應用於任意飛機來進行說明。圖 2.1 定義了該飛機的任務剖面。<br><br>
     可以觀察到，任務剖面被分解為數個任務階段。每個階段都有一個編號，且每個階段都有其對應的起始重量與結束重量。
-</p>
+  </p>
+  &emsp;<br>
+  <img src="/image/2026-08-30_160135.png" alt="figure 2.1"/>
+  &emsp;<br>
 </p> 
