@@ -108,4 +108,26 @@ tags: ["Aircrafr Design"]
   <p style="font-family: Arial, 'Microsoft JhengHei', sans-serif; line-height: 1.8; color: #222;">
     基於這兩點，估算 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>TO</sub></span>、<span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>E</sub></span> 與 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>F</sub></span> 數值的過程包含以下步驟：
   </p>
+  <p style="font-family: Arial, 'Microsoft JhengHei', sans-serif; line-height: 1.8; color: #222;">
+    <strong>步驟 1.</strong> 確定任務有效載荷重量 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>PL</sub></span>（第 2.2 節）。<br>
+    <strong>步驟 2.</strong> 猜測一個合理的起飛重量 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>TO<sub>guess</sub></sub></span>（第 2.3 節）。<br>
+    <strong>步驟 3.</strong> 確定任務燃油重量 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>F</sub></span>（第 2.4 節）。<br>
+    <strong>步驟 4.</strong> 由下式計算營運空重的暫定值 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>OE<sub>tent</sub></sub></span>：
+  </p>
+  <p style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold; text-align: center; margin: 10px 0;">
+    W<sub>OE<sub>tent</sub></sub> = W<sub>TO<sub>guess</sub></sub> - W<sub>F</sub> - W<sub>PL</sub>
+    <span style="float: right; font-style: normal; font-weight: normal;">(2.4)</span>
+  </p>
+  <p style="font-family: Arial, 'Microsoft JhengHei', sans-serif; line-height: 1.8; color: #222;">
+    <strong>步驟 5.</strong> 由下式計算空重的暫定值 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>E<sub>tent</sub></sub></span>：
+  </p>
+  <p style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold; text-align: center; margin: 10px 0;">
+    W<sub>E<sub>tent</sub></sub> = W<sub>OE<sub>tent</sub></sub> - W<sub>tfo</sub> - W<sub>crew</sub>
+    <span style="float: right; font-style: normal; font-weight: normal;">(2.5)</span>
+  </p>
+  <p style="font-family: Arial, 'Microsoft JhengHei', sans-serif; line-height: 1.8; color: #222;">
+    雖然對某些飛機而言，<span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>tfo</sub></span> 可高達 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>TO</sub></span> 的 0.5% 或更多，但在設計過程的這個階段通常會將其忽略。如何確定 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>crew</sub></span> 的數值將在第 2.2 節中討論。<br><br>
+    <strong>步驟 6.</strong> 從第 2.5 節中找出空重 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>E</sub></span> 的許用值。<br>
+    <strong>步驟 7.</strong> 比較步驟 5 與步驟 6 所得之 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>E<sub>tent</sub></sub></span> 與 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>E</sub></span> 的數值。接下來，調整 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>TO<sub>guess</sub></sub></span> 的數值並重複步驟 3 至步驟 6。持續此過程，直到 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>E<sub>tent</sub></sub></span> 與 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>E</sub></span> 的數值互相符合至預先選定的容許誤差內。在設計過程的這個階段，通常 0.5% 的容許誤差就足夠了。
+  </p>
 </p> 
