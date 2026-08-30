@@ -1,5 +1,5 @@
 ---
-title: "Aircraft Design 01"
+title: "Aircraft Design 00"
 description: "初步解析《Airplane Design》初步尺寸估算、推進系統整合、氣動力計算、穩定性控制至成本評估等飛機設計八大核心階段。"
 pubDate: 2026-08-28
 category: "航太工程"
