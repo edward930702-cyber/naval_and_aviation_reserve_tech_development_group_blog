@@ -172,7 +172,7 @@ tags: ["Aircrafr Design"]
         <span style="display: block; padding: 0 2px;">W<sub>TO</sub></span>
     </span> 通常幾乎等於 1)
   </p>
-  <p style="font-family: Arial, 'Microsoft JhengHei', sans-serif; line-height: 1.8; color: #222;">
+  <p style="font-family: Arial, 'Microsoft JhengHei', sans-serif; line-height: 1.8; color: #cbd5e1">
     以下定義非常重要：<br><br>
     <span style="text-decoration: underline; font-weight: bold;">定義：每個階段的燃油比例（fuel-fraction）定義為結束重量與起始重量的比值。</span><br><br>
     下一步是為對應每個任務階段的燃油比例給定一個數值。作法如下：<br><br>
