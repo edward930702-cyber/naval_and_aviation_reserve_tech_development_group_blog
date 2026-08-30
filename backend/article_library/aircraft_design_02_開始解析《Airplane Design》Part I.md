@@ -17,7 +17,7 @@ tags: ["Aircrafr Design"]
 </h2>
 <p style="color: #cbd5e1; font-size: 1rem; line-height: 1.75; margin-bottom: 1rem;">
   <p style="color: #cbd5e1; font-weight: bold; font-size: 1.1rem; margin-top: 16px; margin-bottom: 6px;">
-    符號表
+    Table of Symbles
   </p>
   <img src="/image/2026-08-30_033230.png" alt="table_of_symble_1"/>
   <img src="/image/2026-08-30_034337.png" alt="table_of_symble_2"/>
@@ -76,6 +76,9 @@ tags: ["Aircrafr Design"]
     &emsp;&emsp;&emsp;&emsp;第 2 章：估算起飛總重 W<sub>TO</sub>、空重 W<sub>E</sub> 以及任務燃料重 W<sub>F</sub>。<br>
     &emsp;&emsp;&emsp;&emsp;第 3 章：估算機翼面積 S、機翼展弦比 A、起飛推力 T<sub>TO</sub> 以及最大升力係數 C<sub>L<sub>max</sub></sub>、C<sub>L<sub>max<sub>TO</sub></sub></sub> 與 C<sub>L<sub>max<sub>L</sub></sub></sub>。<br>
     &emsp;&emsp;&emsp;&emsp;第 4 章：提供初步尺寸估算流程的使用者指南。<br>
+    &emsp;<br>
+    <img src="/image/2026-08-30_044359.png" alt="Figure 1.1"/>
+    <img src="/image/2026-08-30_044418.png" alt="Figure 1.2"/>
   </p>
 </p>
 
