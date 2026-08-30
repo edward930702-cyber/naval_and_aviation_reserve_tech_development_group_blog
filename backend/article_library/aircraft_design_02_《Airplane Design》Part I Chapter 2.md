@@ -164,4 +164,10 @@ tags: ["Aircrafr Design"]
   &emsp;<br>
   <img src="/image/2026-08-30_160135.png" alt="figure 2.1"/>
   &emsp;<br>
+  <p style="font-family: Arial, 'Microsoft JhengHei', sans-serif; line-height: 1.8; color: #cbd5e1;">
+    (分數 <span style="display: inline-block; vertical-align: middle; text-align: center; font-family: 'Times New Roman', serif; font-style: italic;">
+        <span style="display: block; border-bottom: 1px solid #cbd5e1; padding: 0 2px;">W<sub>ramp</sub></span>
+        <span style="display: block; padding: 0 2px;">W<sub>TO</sub></span>
+    </span> 通常幾乎等於 1)
+  </p>
 </p> 
