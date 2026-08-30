@@ -137,4 +137,28 @@ tags: ["Aircrafr Design"]
   <p style="color: #ffffff; font-weight: bold; font-size: 1.1rem; margin-top: 16px; margin-bottom: 6px;">
     2.2 任務有效載荷重量 <span style="font-family: 'Times New Roman', serif; font-style: italic;">W<sub>PL</sub></span> 與機組人員重量 <span style="font-family: 'Times New Roman', serif; font-style: italic;">W<sub>crew</sub></span> 之確定
   </p>
+  <p style="font-family: Arial, 'Microsoft JhengHei', sans-serif; line-height: 1.8; color: #cbd5e1;">
+    在第 2.1 節中，<span style="text-decoration: underline; font-weight: bold;">要點 1</span> 指出從基礎考量來估算 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>F</sub></span> 的數值並不困難。本節將介紹達成此目的的方法。<br><br>
+    任務燃油重量 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>F</sub></span> 可表示為：
+  </p>
+  <p style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold; text-align: center; margin: 10px 0;">
+    W<sub>F</sub> = W<sub>F<sub>used</sub></sub> + W<sub>F<sub>res</sub></sub>
+    <span style="float: right; font-style: normal; font-weight: normal;">(2.6)</span>
+  </p>
+  <p style="font-family: Arial, 'Microsoft JhengHei', sans-serif; line-height: 1.8; color: #cbd5e1;">
+    其中：<br>
+    <span style="display: inline-block; margin-left: 20px;">
+        <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>F<sub>used</sub></sub></span> 為任務期間實際使用的燃油，
+    </span><br>
+    <span style="display: inline-block; margin-left: 20px;">
+        <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>F<sub>res</sub></sub></span> 為任務所需的預備燃油。
+    </span><br><br>
+    預備燃油通常在任務規範中加以規定，也在規範客運運輸機營運的 FAR（聯邦航空法規）中有所規定。預備燃油通常以下列一種或多種形式規定：<br>
+    <span style="display: inline-block; margin-left: 20px;">1. 作為 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>F<sub>used</sub></sub></span> 的一部分比例</span><br>
+    <span style="display: inline-block; margin-left: 20px;">2. 作為額外航程的要求，以便能飛抵備降機場</span><br>
+    <span style="display: inline-block; margin-left: 20px;">3. 作為（額外）盤旋時間的要求</span><br><br>
+    為了確定任務期間實際使用的燃油重量 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>F<sub>used</sub></sub></span>，將使用所謂的<span style="text-decoration: underline; font-weight: bold;">燃油比例法（fuel-fraction method）</span>。在此方法中，飛機任務被分解為數個任務階段。每個階段所使用的燃油可透過簡單計算得出，或根據經驗進行估算。<br><br>
+    燃油比例法將透過應用於任意飛機來進行說明。圖 2.1 定義了該飛機的任務剖面。<br><br>
+    可以觀察到，任務剖面被分解為數個任務階段。每個階段都有一個編號，且每個階段都有其對應的起始重量與結束重量。
+</p>
 </p> 
