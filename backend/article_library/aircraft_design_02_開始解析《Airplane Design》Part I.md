@@ -78,6 +78,7 @@ tags: ["Aircrafr Design"]
     &emsp;&emsp;&emsp;&emsp;第 4 章：提供初步尺寸估算流程的使用者指南。<br>
     &emsp;<br>
     <img src="/image/2026-08-30_044359.png" alt="Figure 1.1"/>
+    &emsp;<br>
     <img src="/image/2026-08-30_044418.png" alt="Figure 1.2"/>
   </p>
 </p>
