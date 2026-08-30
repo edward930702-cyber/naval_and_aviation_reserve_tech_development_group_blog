@@ -80,6 +80,30 @@ tags: ["Aircrafr Design"]
     <img src="/image/2026-08-30_044359.png" alt="Figure 1.1"/>
     &emsp;<br>
     <img src="/image/2026-08-30_044418.png" alt="Figure 1.2"/>
+    &emsp;<br>
+    <p class="mermaid">
+    graph TD
+        subgraph 民用飛機
+            A[獨立市場調查] <--> C[初步設計與權衡研究]
+            B[客戶需求] <--> C
+            C --> D[任務規範]
+        end
+
+        subgraph 軍用飛機
+            E[軍方明確作戰需求] <--> G[初步設計與權衡研究]
+            F[承包商向軍方提出需求] <--> G
+            G --> H[發布建議書徵求文件 RFP <br/> 內含任務規範]
+        end
+
+        D --> I[初步尺寸估算]
+        H --> I
+        I --> J[初步設計]
+        J --> K[若一切順利：<br/>全尺寸設計與開發]
+    </p>
+
+    <p style="text-align: center; font-weight: bold;">
+        圖 1.1 任務規範的演進過程及其與初步尺寸估算及設計之關係範例
+    </p>
   </p>
 </p>
 
