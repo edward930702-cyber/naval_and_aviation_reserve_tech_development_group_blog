@@ -135,6 +135,6 @@ tags: ["Aircrafr Design"]
   </p>
 
   <p style="color: #ffffff; font-weight: bold; font-size: 1.1rem; margin-top: 16px; margin-bottom: 6px;">
-    2.2 <span style="text-decoration: underline; font-weight: bold;">任務有效載荷重量 <span style="font-family: 'Times New Roman', serif; font-style: italic;">W<sub>PL</sub></span> 與機組人員重量 <span style="font-family: 'Times New Roman', serif; font-style: italic;">W<sub>crew</sub></span> 之確定</span>
+    2.2 任務有效載荷重量 <span style="font-family: 'Times New Roman', serif; font-style: italic;">W<sub>PL</sub></span> 與機組人員重量 <span style="font-family: 'Times New Roman', serif; font-style: italic;">W<sub>crew</sub></span> 之確定
   </p>
 </p> 
