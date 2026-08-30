@@ -18,5 +18,18 @@ tags: ["Aircrafr Design"]
     &emsp;&emsp;&emsp;&emsp;* 空重，<span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>E</sub></span><br>
     &emsp;&emsp;&emsp;&emsp;* 任務燃油重量，<span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>F</sub></span><br>
     &emsp;<br>
+    此方法適用於以下十二種類型的飛機：<br>
+    &emsp;&emsp;&emsp;&emsp;1. 自製螺旋槳飛機 (Homebuilt Propeller Driven Airplanes)<br>
+    &emsp;&emsp;&emsp;&emsp;2. 單發動機螺旋槳飛機 (Single Engine Propeller Driven Airplanes)<br>
+    &emsp;&emsp;&emsp;&emsp;3. 雙發動機螺旋槳飛機 (Twin Engine Propeller Driven Airplanes)<br>
+    &emsp;&emsp;&emsp;&emsp;4. 農業飛機 (Agricultural Airplanes)<br>
+    &emsp;&emsp;&emsp;&emsp;5. 商務噴射機 (Business Jets)<br>
+    &emsp;&emsp;&emsp;&emsp;6. 區域渦輪螺旋槳飛機 (Regional Turbopropeller Driven Airplanes)<br>
+    &emsp;&emsp;&emsp;&emsp;7. 運輸噴射機 (Transport Jets)<br>
+    &emsp;&emsp;&emsp;&emsp;8. 軍用教練機 (Military Trainers)<br>
+    &emsp;&emsp;&emsp;&emsp;9. 戰鬥機 (Fighters)<br>
+    &emsp;&emsp;&emsp;&emsp;10. 軍用巡邏、轟炸及運輸機 (Military Patrol, Bomb and Transport Airplanes)<br>
+    &emsp;&emsp;&emsp;&emsp;11. 飛艇、兩棲及浮筒水上飛機 (Flying Boats, Amphibious and Float Airplanes)<br>
+    &emsp;&emsp;&emsp;&emsp;12. 超音速巡航飛機 (Supersonic Cruise Airplanes)
   </p>
 </p>
