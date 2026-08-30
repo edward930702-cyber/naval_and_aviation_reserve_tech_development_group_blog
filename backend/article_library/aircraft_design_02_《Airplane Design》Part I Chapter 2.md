@@ -130,4 +130,7 @@ tags: ["Aircrafr Design"]
     <strong>步驟 6.</strong> 從第 2.5 節中找出空重 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>E</sub></span> 的許用值。<br>
     <strong>步驟 7.</strong> 比較步驟 5 與步驟 6 所得之 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>E<sub>tent</sub></sub></span> 與 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>E</sub></span> 的數值。接下來，調整 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>TO<sub>guess</sub></sub></span> 的數值並重複步驟 3 至步驟 6。持續此過程，直到 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>E<sub>tent</sub></sub></span> 與 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>E</sub></span> 的數值互相符合至預先選定的容許誤差內。在設計過程的這個階段，通常 0.5% 的容許誤差就足夠了。
   </p>
+  <p style="font-family: Arial, 'Microsoft JhengHei', sans-serif; line-height: 1.8; color: #222;">
+    第 2.2 節至第 2.5 節包含估算 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>PL</sub></span>、<span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>TO</sub></span> 與 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>F</sub></span> 的詳細方法。第 2.6 節則將此分步方法應用於三種類型的飛機。
+  </p>
 </p> 
