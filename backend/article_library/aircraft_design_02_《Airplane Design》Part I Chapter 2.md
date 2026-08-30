@@ -1,6 +1,6 @@
 ---
-title: "Aircraft Design 02"
-description: "《Airplane Design》Part I Chapter 2. "
+title: "《Airplane Design》Part I Chapter 2."
+description: "Aircraft Design 02"
 pubDate: 2026-08-31
 category: "航太工程"
 tags: ["Aircrafr Design"]
