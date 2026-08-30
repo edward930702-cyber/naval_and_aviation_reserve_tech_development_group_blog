@@ -80,7 +80,7 @@ tags: ["Aircrafr Design"]
     W<sub>E</sub> = W<sub>ME</sub> + W<sub>FEQ</sub>
     <span style="float: right; font-style: normal; font-weight: normal;">(2.3)</span>
   </p>
-    圖片內容的繁體中文翻譯與可直接嵌入 HTML 的程式碼如下：繁體中文翻譯其中：$W_{ME}$ 為製造商空重（Manufacturers Empty Weight），有時稱為綠飛機重量（Green Weight）$W_{FEQ}$ 為固定設備重量（Fixed Equipment Weight）固定設備重量可包含以下項目：航電設備空調設備專用雷達設備輔助動力單元 (APU)內裝與傢俱設施飛機於執行預定任務期間所需的其他設備HTML 程式碼HTML<p style="font-family: Arial, 'Microsoft JhengHei', sans-serif;   line-height: 1.8; color: #222;">
+  <p style="font-family: Arial, 'Microsoft JhengHei', sans-serif;   line-height: 1.8; color: #cbd5e1;">
     其中：<br>
     <span style="display: inline-block; margin-left: 20px;">
         <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>ME</sub></span> 為製造商空重（manufacturers empty weight），有時稱為綠飛機重量（green weight），
