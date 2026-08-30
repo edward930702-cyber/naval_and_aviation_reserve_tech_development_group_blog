@@ -172,4 +172,49 @@ tags: ["Aircrafr Design"]
         <span style="display: block; padding: 0 2px;">W<sub>TO</sub></span>
     </span> 通常幾乎等於 1)
   </p>
+  <p style="font-family: Arial, 'Microsoft JhengHei', sans-serif; line-height: 1.8; color: #222;">
+    以下定義非常重要：<br><br>
+    <span style="text-decoration: underline; font-weight: bold;">定義：每個階段的燃油比例（fuel-fraction）定義為結束重量與起始重量的比值。</span><br><br>
+    下一步是為對應每個任務階段的燃油比例給定一個數值。作法如下：<br><br>
+    <strong>階段 1：發動機啟動與預熱。</strong><br>
+    <span style="display: inline-block; margin-left: 20px;">
+        起始重量為 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>TO</sub></span>。結束重量為 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>1</sub></span>。
+    </span><br>
+    <span style="display: inline-block; margin-left: 20px;">
+        根據先前定義，此階段的燃油比例為：<span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>1</sub>/W<sub>TO</sub></span>。
+    </span><br>
+    <span style="display: inline-block; margin-left: 20px;">
+        表 2.1 提供了確定十二種類型飛機此比例的指南。
+    </span><br><br>
+    <strong>階段 2：滑行。</strong><br>
+    <span style="display: inline-block; margin-left: 20px;">
+        起始重量為 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>1</sub></span>。結束重量為 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>2</sub></span>。
+    </span><br>
+    <span style="display: inline-block; margin-left: 20px;">
+        此階段的燃油比例為：<span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>2</sub>/W<sub>1</sub></span>。
+    </span><br>
+    <span style="display: inline-block; margin-left: 20px;">
+        表 2.1 提供了確定十二種類型飛機此比例的指南。
+    </span><br><br>
+    <strong>階段 3：起飛。</strong><br>
+    <span style="display: inline-block; margin-left: 20px;">
+        起始重量為 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>2</sub></span>。結束重量為 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>3</sub></span>。
+    </span><br>
+    <span style="display: inline-block; margin-left: 20px;">
+        此階段的燃油比例為：<span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>3</sub>/W<sub>2</sub></span>。
+    </span><br>
+    <span style="display: inline-block; margin-left: 20px;">
+        表 2.1 提供了確定十二種類型飛機此比例的指南。
+    </span><br><br>
+    <strong>階段 4：爬升至巡航高度並加速至巡航速度。</strong><br>
+    <span style="display: inline-block; margin-left: 20px;">
+        起始重量為 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>3</sub></span>。結束重量為 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>4</sub></span>。
+    </span><br>
+    <span style="display: inline-block; margin-left: 20px;">
+        此階段的燃油比例 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>4</sub>/W<sub>3</sub></span> 可直接從圖 2.2 確定。
+    </span><br>
+    <span style="display: inline-block; margin-left: 20px;">
+        然而，在某些情況下，最好透過布雷蓋續航力方程式（Breguet's equation for endurance，參考文獻 14）來計算此比例：
+    </span>
+  </p>
 </p> 
