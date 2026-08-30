@@ -44,4 +44,23 @@ tags: ["Aircrafr Design"]
     W<sub>TO</sub> = W<sub>OE</sub> + W<sub>F</sub> + W<sub>PL</sub>
     <span style="float: right; font-style: normal; font-weight: normal;">(2.1)</span>
   </p>
+  <p>
+  其中：<br>
+  </p>
+  <p>
+    <span style="display: inline-block; margin-left: 20px;">
+        <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>OE</sub></span> 為飛機營運空重，
+    </span><br>
+    <span style="display: inline-block; margin-left: 20px;">
+        <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>F</sub></span> 為任務燃油重量，
+    </span><br>
+    <span style="display: inline-block; margin-left: 20px;">
+        <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>PL</sub></span> 為有效載荷重量。
+    </span><br><br>
+    營運空重 <span style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold;">W<sub>OE</sub></span>（亦稱為 OWE），通常表示如下：
+  </p>
+  <p style="font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold; text-align: center; margin: 15px 0;">
+    W<sub>OE</sub> = W<sub>E</sub> + W<sub>tfo</sub> + W<sub>crew</sub>
+    <span style="float: right; font-style: normal; font-weight: normal;">(2.2)</span>
+  </p>
 </p>
